@@ -35,4 +35,4 @@ export default function DRCActorPage() {
       </article>
     </main>
   );
-}S
+}

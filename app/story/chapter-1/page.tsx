@@ -1,3 +1,4 @@
+
 export default function ChapterOnePage() {
     return (
       <main className="min-h-screen bg-white text-neutral-900">
