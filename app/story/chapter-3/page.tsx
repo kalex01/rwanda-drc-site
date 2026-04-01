@@ -15,7 +15,7 @@ export default function ChapterThreePage() {
         {/* INTRO */}
         <p className="mt-8 text-lg leading-8 text-neutral-700">
           Eastern Congo is often described as a place of instability, but that
-          description is inzcomplete. It is also a place of extraordinary value.
+          description is incomplete. It is also a place of extraordinary value.
           Beneath its soil lies one of the richest concentrations of strategic
           minerals in the world. This dual reality—instability above ground and
           wealth beneath it—defines the logic of the conflict more than any
