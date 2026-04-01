@@ -38,7 +38,7 @@ export default function ChapterOnePage() {
           <p className="mt-6 text-lg leading-8 text-neutral-700">
             This project approaches the issue as both a narrative and an
             analytical system. It aims to explain not only what happened, but how
-            the conflict continues to sustain itself through intertwined political,
+            the conflict continues to sustain itself through intertwined ethno-tribal,political,
             military, and economic structures.
           </p>
         </article>
