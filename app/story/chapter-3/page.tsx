@@ -9,7 +9,7 @@ export default function ChapterThreePage() {
         </p>
 
         <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-5xl">
-          The Land Beneath the Conflict-Updated March 31
+          The Land Beneath the Conflict
         </h1>
 
         {/* INTRO */}
