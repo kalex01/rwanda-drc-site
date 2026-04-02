@@ -1,43 +1,138 @@
+import Link from "next/link";
+
 export default function ChapterFivePage() {
-    return (
-      <main className="min-h-screen bg-white text-neutral-900">
-        <article className="mx-auto max-w-3xl px-6 py-16 md:py-20">
-          <p className="text-sm uppercase tracking-[0.2em] text-neutral-500">
-            Chapter 5
-          </p>
-  
-          <h1 className="mt-4 text-4xl font-semibold md:text-5xl">
-            Rwanda’s Strategic Mindset
-          </h1>
-  
-          <p className="mt-8 text-lg leading-8 text-neutral-700">
-            Rwanda’s approach to eastern Congo cannot be understood without
-            considering its history. The memory of the 1994 genocide continues to
-            shape how security is perceived and how threats are evaluated. For
-            Rwanda, instability across the border is not distant—it is immediate.
-          </p>
-  
-          <p className="mt-6 text-lg leading-8 text-neutral-700">
-            This has led to a strategic posture that prioritizes prevention,
-            control, and influence. Rather than waiting for threats to materialize,
-            Rwanda’s approach has often focused on acting early and maintaining
-            awareness of developments beyond its borders.
-          </p>
-  
-          <p className="mt-6 text-lg leading-8 text-neutral-700">
-            At the same time, Rwanda has built a reputation for internal
-            organization, discipline, and economic development. This contrast
-            between internal structure and regional complexity contributes to its
-            unique position in the conflict.
-          </p>
-  
-          <p className="mt-6 text-lg leading-8 text-neutral-700">
-            The result is a dual dynamic: Rwanda presents itself as a stable,
-            forward-looking state, while remaining deeply engaged in a regional
-            environment that is far less predictable. This tension is central to
-            understanding its role in the broader system.
-          </p>
-        </article>
-      </main>
-    );
-  }
+  return (
+    <main className="min-h-screen bg-white text-neutral-900">
+      <article className="mx-auto max-w-3xl px-6 py-16 md:py-20">
+        <p className="text-sm uppercase tracking-[0.2em] text-neutral-500">
+          Chapter 5
+        </p>
+
+        <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-5xl">
+          Rwanda’s Strategic Mindset
+        </h1>
+
+        <p className="mt-8 text-lg leading-8 text-neutral-700">
+          There are countries whose regional behavior is shaped mainly by size,
+          and there are others shaped by memory. Rwanda belongs to the second
+          category. Its posture toward eastern Congo cannot be understood without
+          recognizing how deeply the aftermath of 1994 continues to inform its
+          sense of danger, urgency, and statecraft.
+        </p>
+
+        <p className="mt-6 text-lg leading-8 text-neutral-700">
+          The genocide was not simply a national trauma. It was also a
+          foundational event in how the modern Rwandan state understands
+          vulnerability. From that experience emerged a governing outlook in
+          which security is treated not as an abstract policy area, but as a
+          condition of survival. That helps explain why instability across the
+          border is not viewed in Kigali as someone else’s problem. It is seen
+          as something that can directly affect Rwanda’s own future.
+        </p>
+
+        <h2 className="mt-10 text-2xl font-semibold">
+          Security beyond borders
+        </h2>
+
+        <p className="mt-4 text-lg leading-8 text-neutral-700">
+          One of the most important ideas in Rwanda’s strategic mindset is that
+          threats do not stop at formal borders. Armed groups linked to the
+          post-1994 regional crisis moved into eastern Congo and remained part of
+          Rwanda’s security calculations for years. This gave rise to a logic of
+          preemptive attention: waiting for instability to mature into direct
+          danger is seen as too costly.
+        </p>
+
+        <p className="mt-6 text-lg leading-8 text-neutral-700">
+          In practical terms, this means Rwanda tends to approach the region not
+          passively, but actively. It watches developments closely, interprets
+          shifts in eastern Congo through the lens of national security, and
+          seeks to avoid strategic surprise. Supporters may describe this as
+          realism rooted in historical experience. Critics may view it as a
+          regional posture that goes beyond legitimate defense. Both readings
+          exist because Rwanda’s behavior occupies a difficult space between
+          memory, necessity, and ambition.
+        </p>
+
+        <h2 className="mt-10 text-2xl font-semibold">
+          Discipline as a form of power
+        </h2>
+
+        <p className="mt-4 text-lg leading-8 text-neutral-700">
+          Rwanda is not a large country, yet it often exerts influence beyond
+          what its size might suggest. Part of that comes from military and
+          administrative discipline. Part comes from the image it has built of
+          itself as organized, efficient, and strategically coherent. In a
+          region where many states struggle with internal fragmentation, that
+          coherence becomes a source of leverage.
+        </p>
+
+        <p className="mt-6 text-lg leading-8 text-neutral-700">
+          This internal discipline matters externally. It allows Rwanda to act
+          quickly, frame its actions with confidence, and position itself as a
+          state that knows what it wants. Whether others agree with those goals
+          is another matter, but the clarity itself is a form of strength. It
+          affects diplomacy, reputation, and the ability to shape narratives in
+          the region.
+        </p>
+
+        <h2 className="mt-10 text-2xl font-semibold">
+          Security and economics do not remain separate
+        </h2>
+
+        <p className="mt-4 text-lg leading-8 text-neutral-700">
+          Rwanda’s strategic position is also tied to economics. Over time, it
+          has developed mineral processing, trade, and export capacity that
+          makes it an important regional node in broader supply chains. This does
+          not automatically prove illicit conduct, but it does mean that Rwanda
+          occupies a structurally significant place in how resources move through
+          the region.
+        </p>
+
+        <p className="mt-6 text-lg leading-8 text-neutral-700">
+          This is one reason debates around Rwanda are rarely limited to
+          security. They also touch trade, traceability, and regional economic
+          advantage. Critics argue that economic and strategic interests may
+          overlap. Rwanda insists that its trade is legitimate and that its
+          actions are guided by security rather than opportunism. The tension
+          between these views is central to the broader conflict narrative.
+        </p>
+
+        <h2 className="mt-10 text-2xl font-semibold">
+          A state that acts from vigilance
+        </h2>
+
+        <p className="mt-4 text-lg leading-8 text-neutral-700">
+          In the end, Rwanda’s regional behavior is best understood not through
+          a single label, but through a combination of historical memory,
+          strategic vigilance, and structured ambition. It is a state that does
+          not see itself as buffered by geography. It sees itself as surrounded
+          by uncertainties that must be managed actively.
+        </p>
+
+        <p className="mt-6 text-lg leading-8 text-neutral-700">
+          That mindset helps explain why Rwanda remains such a central actor in
+          the Rwanda–DRC nexus. It is not merely reacting to events. It is
+          interpreting them through a specific understanding of survival,
+          control, and regional order.
+        </p>
+
+        <div className="mt-12 flex items-center justify-between border-t border-neutral-200 pt-8">
+          <Link
+            href="/story/chapter-4"
+            className="rounded-2xl border border-neutral-300 px-5 py-3 transition hover:bg-neutral-100"
+          >
+            Previous Chapter
+          </Link>
+
+          <Link
+            href="/story/chapter-6"
+            className="rounded-2xl bg-neutral-900 px-5 py-3 text-white transition hover:bg-neutral-700"
+          >
+            Next Chapter
+          </Link>
+        </div>
+      </article>
+    </main>
+  );
+}
