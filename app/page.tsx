@@ -1,91 +1,94 @@
-import Link from "next/link";
+import Link from "next/link"
+
+const quickLinks = [
+  {
+    title: "Chapters",
+    href: "/chapters",
+    description:
+      "Open the full chapter index and navigate to all 12 chapters."
+  },
+  {
+    title: "Actors",
+    href: "/actors",
+    description:
+      "Read structured pages on Rwanda, the DRC, and M23."
+  },
+  {
+    title: "Appendix",
+    href: "/appendix",
+    description:
+      "Open the glossary, timeline, and sources reference section."
+  }
+]
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-white text-neutral-900">
-      <section className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-        <p className="mb-4 text-sm uppercase tracking-[0.2em] text-neutral-500">
-          Narrative Research Platform
+    <main className="mx-auto max-w-5xl px-6 py-12">
+      <section className="max-w-3xl">
+        <p className="text-sm font-semibold uppercase tracking-wide">
+          Rwanda–DRC Site
         </p>
-
-        <h1 className="max-w-5xl text-4xl font-semibold leading-tight md:text-6xl">
-          The Rwanda–DRC Nexus
+        <h1 className="mt-3 text-5xl font-bold leading-tight">
+          Understanding the Rwanda–DRC conflict
         </h1>
-
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-neutral-700">
-          A structured narrative and research website on conflict, minerals,
-          sovereignty, armed actors, and the global systems connected to eastern
-          Congo.
+        <p className="mt-6 text-lg leading-8">
+          This site presents structured chapters, actor profiles, and reference
+          material to help readers understand the conflict, its history, and its
+          regional implications.
         </p>
-
-        <div className="mt-10 flex flex-wrap gap-4">
-          <Link
-            href="/story"
-            className="rounded-2xl bg-neutral-900 px-6 py-3 text-white transition hover:bg-neutral-700"
-          >
-            Start Reading
-          </Link>
-
-          <Link
-            href="/appendix"
-            className="rounded-2xl border border-neutral-300 px-6 py-3 transition hover:bg-neutral-100"
-          >
-            Explore the Data
-          </Link>
-        </div>
       </section>
 
-      <section className="border-t border-neutral-200">
-        <div className="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-3">
+      <section className="mt-10 grid gap-6 md:grid-cols-3">
+        {quickLinks.map((item) => (
           <Link
-            href="/story"
-            className="rounded-3xl border border-neutral-200 p-6 transition hover:border-neutral-400 hover:shadow-sm"
+            key={item.href}
+            href={item.href}
+            className="block rounded-2xl border p-6 shadow-sm transition hover:shadow-md"
           >
-            <h2 className="text-xl font-semibold">Read the Story</h2>
-            <p className="mt-3 leading-7 text-neutral-700">
-              Follow the project chapter by chapter, from historical roots to
-              the global mineral system.
+            <h2 className="text-2xl font-semibold">{item.title}</h2>
+            <p className="mt-3 text-sm leading-6">{item.description}</p>
+            <p className="mt-4 text-sm font-medium underline">
+              Open section
+            </p>
+          </Link>
+        ))}
+      </section>
+
+      <section className="mt-12 rounded-2xl border p-6 shadow-sm">
+        <h2 className="text-2xl font-semibold">Current site structure</h2>
+
+        <div className="mt-4 grid gap-4 md:grid-cols-3">
+          <Link
+            href="/chapters"
+            className="block rounded-xl border p-4 transition hover:shadow-md"
+          >
+            <h3 className="text-lg font-semibold">12 Chapters</h3>
+            <p className="mt-2 text-sm leading-6">
+              Open the chapter index and navigate chapter by chapter.
             </p>
           </Link>
 
           <Link
             href="/actors"
-            className="rounded-3xl border border-neutral-200 p-6 transition hover:border-neutral-400 hover:shadow-sm"
+            className="block rounded-xl border p-4 transition hover:shadow-md"
           >
-            <h2 className="text-xl font-semibold">Understand the Actors</h2>
-            <p className="mt-3 leading-7 text-neutral-700">
-              Explore the roles of Rwanda, the DRC, M23, and other regional
-              players.
+            <h3 className="text-lg font-semibold">3 Actor Pages</h3>
+            <p className="mt-2 text-sm leading-6">
+              Rwanda, the DRC, and M23 in one shared structure.
             </p>
           </Link>
 
           <Link
             href="/appendix"
-            className="rounded-3xl border border-neutral-200 p-6 transition hover:border-neutral-400 hover:shadow-sm"
+            className="block rounded-xl border p-4 transition hover:shadow-md"
           >
-            <h2 className="text-xl font-semibold">Review the Data</h2>
-            <p className="mt-3 leading-7 text-neutral-700">
-              Access minerals, companies, timelines, and structured reference
-              material.
+            <h3 className="text-lg font-semibold">Appendix</h3>
+            <p className="mt-2 text-sm leading-6">
+              Glossary, timeline, and sources reference section.
             </p>
           </Link>
         </div>
       </section>
-
-      <section className="border-t border-neutral-200">
-        <div className="mx-auto max-w-6xl px-6 py-16">
-          <div className="rounded-3xl bg-neutral-100 p-8 md:p-10">
-            <p className="text-sm uppercase tracking-[0.2em] text-neutral-500">
-              Why this project matters
-            </p>
-            <p className="mt-4 max-w-4xl text-2xl font-medium leading-10 text-neutral-900">
-              Eastern Congo is not only a regional conflict zone. It is a place
-              where memory, insecurity, mineral wealth, and global demand meet
-              in ways that shape lives far beyond the region itself.
-            </p>
-          </div>
-        </div>
-      </section>
     </main>
-  );
+  )
 }
