@@ -1,115 +1,113 @@
-import Link from "next/link";
+import Link from "next/link"
 
 export default function ChapterTwelvePage() {
   return (
-    <main className="min-h-screen bg-white text-neutral-900">
-      <article className="mx-auto max-w-3xl px-6 py-16 md:py-20">
-        <p className="text-sm uppercase tracking-[0.2em] text-neutral-500">
-          Chapter 12
-        </p>
+    <article className="mx-auto max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+        Chapter 12
+      </p>
 
-        <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-5xl">
-          Conclusion
-        </h1>
+      <h1 className="mt-4 text-4xl font-bold leading-tight text-slate-900 md:text-5xl">
+        Conclusion
+      </h1>
 
-        <p className="mt-8 text-lg leading-8 text-neutral-700">
-          The Rwanda–DRC conflict does not yield easily to a single explanation.
-          It is not only a story of armed groups, nor only of state weakness,
-          nor only of minerals, nor only of history. It is the point at which
-          all of these forces meet. That is what makes it so difficult to resolve
-          and so important to understand carefully.
-        </p>
+      <p className="mt-8 text-lg leading-8 text-slate-700">
+        The Rwanda–DRC conflict does not yield easily to a single explanation.
+        It is not only a story of armed groups, nor only of state weakness,
+        nor only of minerals, nor only of history. It is the point at which
+        all of these forces meet. That is what makes it so difficult to resolve
+        and so important to understand carefully.
+      </p>
 
-        <p className="mt-6 text-lg leading-8 text-neutral-700">
-          Congo remains the central space in which the crisis unfolds, a country
-          of immense wealth that continues to struggle with the challenge of
-          turning territorial scale into lived state presence. Rwanda remains one
-          of the most decisive regional actors, shaped by a strategic mindset
-          formed through trauma, vigilance, and the conviction that threats
-          beyond the border cannot be treated as distant. Armed groups such as
-          M23 remain important not only for what they do militarily, but for how
-          they become part of larger structures of access, movement, and value.
-        </p>
+      <p className="mt-6 text-lg leading-8 text-slate-700">
+        Congo remains the central space in which the crisis unfolds, a country
+        of immense wealth that continues to struggle with the challenge of
+        turning territorial scale into lived state presence. Rwanda remains one
+        of the most decisive regional actors, shaped by a strategic mindset
+        formed through trauma, vigilance, and the conviction that threats
+        beyond the border cannot be treated as distant. Armed groups such as
+        M23 remain important not only for what they do militarily, but for how
+        they become part of larger structures of access, movement, and value.
+      </p>
 
-        <p className="mt-6 text-lg leading-8 text-neutral-700">
-          Around these actors sits a wider regional and global system. Neighboring
-          states continue to interpret eastern Congo through their own security
-          and political concerns. International markets continue to absorb the
-          region’s resources with far greater efficiency than they absorb its
-          instability. Narratives continue to compete, because perception
-          influences diplomacy almost as much as evidence itself.
-        </p>
+      <p className="mt-6 text-lg leading-8 text-slate-700">
+        Around these actors sits a wider regional and global system. Neighboring
+        states continue to interpret eastern Congo through their own security
+        and political concerns. International markets continue to absorb the
+        region’s resources with far greater efficiency than they absorb its
+        instability. Narratives continue to compete, because perception
+        influences diplomacy almost as much as evidence itself.
+      </p>
 
-        <h2 className="mt-10 text-2xl font-semibold">
-          A story of layers, not lines
-        </h2>
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+        A story of layers, not lines
+      </h2>
 
-        <p className="mt-4 text-lg leading-8 text-neutral-700">
-          What this project has tried to show is that the conflict is best
-          understood in layers. There is the historical layer, rooted in the
-          regional consequences of the 1994 genocide and the Congo wars. There
-          is the territorial layer, in which geography and uneven state presence
-          shape what is possible. There is the economic layer, in which minerals
-          and trade turn insecurity into value. There is the regional layer, in
-          which neighboring states remain entangled in the outcome. And there is
-          the global layer, in which distant industries and consumers are linked
-          to a chain they rarely see clearly.
-        </p>
+      <p className="mt-4 text-lg leading-8 text-slate-700">
+        What this project has tried to show is that the conflict is best
+        understood in layers. There is the historical layer, rooted in the
+        regional consequences of the 1994 genocide and the Congo wars. There
+        is the territorial layer, in which geography and uneven state presence
+        shape what is possible. There is the economic layer, in which minerals
+        and trade turn insecurity into value. There is the regional layer, in
+        which neighboring states remain entangled in the outcome. And there is
+        the global layer, in which distant industries and consumers are linked
+        to a chain they rarely see clearly.
+      </p>
 
-        <p className="mt-6 text-lg leading-8 text-neutral-700">
-          To collapse these layers into one simple explanation would be easier.
-          It would also be less truthful. The region demands a more patient form
-          of understanding—one willing to hold together multiple realities at the
-          same time.
-        </p>
+      <p className="mt-6 text-lg leading-8 text-slate-700">
+        To collapse these layers into one simple explanation would be easier.
+        It would also be less truthful. The region demands a more patient form
+        of understanding—one willing to hold together multiple realities at the
+        same time.
+      </p>
 
-        <h2 className="mt-10 text-2xl font-semibold">
-          The possibility of another future
-        </h2>
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+        The possibility of another future
+      </h2>
 
-        <p className="mt-4 text-lg leading-8 text-neutral-700">
-          And yet complexity should not be confused with hopelessness. Systems
-          that were built over time can also be changed over time. Not quickly,
-          and not by a single solution, but through accumulated shifts that begin
-          to redirect authority, security, and value. A road kept open. A local
-          administration that remains present. A trade route made more
-          transparent. A region in which sovereignty and security are negotiated
-          with greater seriousness than before. These are not dramatic endings,
-          but they are the material from which real change is made.
-        </p>
+      <p className="mt-4 text-lg leading-8 text-slate-700">
+        And yet complexity should not be confused with hopelessness. Systems
+        that were built over time can also be changed over time. Not quickly,
+        and not by a single solution, but through accumulated shifts that begin
+        to redirect authority, security, and value. A road kept open. A local
+        administration that remains present. A trade route made more
+        transparent. A region in which sovereignty and security are negotiated
+        with greater seriousness than before. These are not dramatic endings,
+        but they are the material from which real change is made.
+      </p>
 
-        <p className="mt-6 text-lg leading-8 text-neutral-700">
-          The future of eastern Congo will not be determined only by those who
-          speak most loudly about it. It will also be shaped by quieter things:
-          institutional consistency, political restraint, regional honesty, and
-          the refusal to treat civilians as an afterthought in systems larger
-          than themselves.
-        </p>
+      <p className="mt-6 text-lg leading-8 text-slate-700">
+        The future of eastern Congo will not be determined only by those who
+        speak most loudly about it. It will also be shaped by quieter things:
+        institutional consistency, political restraint, regional honesty, and
+        the refusal to treat civilians as an afterthought in systems larger
+        than themselves.
+      </p>
 
-        <p className="mt-6 text-lg leading-8 text-neutral-700">
-          If there is a final lesson here, it is that the region should not be
-          understood only as a place of conflict. It is also a place of
-          consequence—historical, regional, and global. What happens there tells
-          us something not only about Central Africa, but about how the modern
-          world connects violence, value, and distance.
-        </p>
+      <p className="mt-6 text-lg leading-8 text-slate-700">
+        If there is a final lesson here, it is that the region should not be
+        understood only as a place of conflict. It is also a place of
+        consequence—historical, regional, and global. What happens there tells
+        us something not only about Central Africa, but about how the modern
+        world connects violence, value, and distance.
+      </p>
 
-        <div className="mt-12 flex items-center justify-between border-t border-neutral-200 pt-8">
-          <Link
-            href="/story/chapter-11"
-            className="rounded-2xl border border-neutral-300 px-5 py-3 transition hover:bg-neutral-100"
-          >
-            Previous Chapter
-          </Link>
+      <div className="mt-12 flex flex-col gap-3 border-t border-slate-200 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <Link
+          href="/story/chapter-11"
+          className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+        >
+          Previous Chapter
+        </Link>
 
-          <Link
-            href="/story"
-            className="rounded-2xl bg-neutral-900 px-5 py-3 text-white transition hover:bg-neutral-700"
-          >
-            Back to Story
-          </Link>
-        </div>
-      </article>
-    </main>
-  );
+        <Link
+          href="/story"
+          className="inline-flex items-center justify-center rounded-xl bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-800"
+        >
+          Back to Story
+        </Link>
+      </div>
+    </article>
+  )
 }
