@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "The Narrative Battle | Chapter 9 | Rwanda–DRC Site",
+  description:
+    "Chapter 9 examines the struggle over meaning, legitimacy, and competing explanations that shape diplomacy, public perception, and political response in the Rwanda–DRC conflict."
+}
 
 export default function ChapterNinePage() {
   return (

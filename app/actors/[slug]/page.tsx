@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
@@ -65,6 +66,27 @@ type ActorSlug = keyof typeof actors
 
 export function generateStaticParams() {
   return Object.keys(actors).map((slug) => ({ slug }))
+}
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+  const { slug } = await params
+  const actor = actors[slug as ActorSlug]
+
+  if (!actor) {
+    return {
+      title: "Actor Not Found | Rwanda–DRC Site",
+      description: "The requested actor profile could not be found."
+    }
+  }
+
+  return {
+    title: `${actor.name} | Actors | Rwanda–DRC Site`,
+    description: actor.summary
+  }
 }
 
 export default async function ActorPage({

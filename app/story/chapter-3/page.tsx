@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "The Land Beneath the Conflict | Chapter 3 | Rwanda–DRC Site",
+  description:
+    "Chapter 3 examines eastern Congo’s mineral wealth, fragmented control, armed presence, and the regional and global systems built around extraction and movement."
+}
 
 export default function ChapterThreePage() {
   return (

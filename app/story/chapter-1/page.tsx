@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Introduction | Chapter 1 | Rwanda–DRC Site",
+  description:
+    "Chapter 1 introduces the Rwanda–DRC conflict as an interconnected system shaped by history, insecurity, sovereignty, extraction, and regional rivalry."
+}
 
 export default function ChapterOnePage() {
   return (

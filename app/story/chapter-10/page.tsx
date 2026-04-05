@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "The Human Cost | Chapter 10 | Rwanda–DRC Site",
+  description:
+    "Chapter 10 examines the human cost of the Rwanda–DRC conflict, including insecurity, displacement, interrupted education, fragile livelihoods, and the everyday burden carried by civilians."
+}
 
 export default function ChapterTenPage() {
   return (

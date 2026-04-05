@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Conclusion | Chapter 12 | Rwanda–DRC Site",
+  description:
+    "Chapter 12 concludes the Rwanda–DRC site by synthesizing the conflict’s historical, territorial, economic, regional, and global layers, and reflecting on the possibility of a different future."
+}
 
 export default function ChapterTwelvePage() {
   return (

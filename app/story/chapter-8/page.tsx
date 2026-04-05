@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "The Global Layer | Chapter 8 | Rwanda–DRC Site",
+  description:
+    "Chapter 8 examines how eastern Congo’s conflict connects to regional gateways, global supply chains, mineral traceability debates, and wider systems of trade and accountability."
+}
 
 export default function ChapterEightPage() {
   return (

@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "The Regional Chessboard | Chapter 7 | Rwanda–DRC Site",
+  description:
+    "Chapter 7 examines the regional dimension of the conflict, showing how neighboring states project power, pursue security, and remain entangled in eastern Congo."
+}
 
 export default function ChapterSevenPage() {
   return (

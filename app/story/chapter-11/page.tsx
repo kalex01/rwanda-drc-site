@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Can the Cycle Be Broken? | Chapter 11 | Rwanda–DRC Site",
+  description:
+    "Chapter 11 examines whether the conflict cycle can be broken through state continuity, regional security, economic reform, and international responsibility."
+}
 
 export default function ChapterElevenPage() {
   return (

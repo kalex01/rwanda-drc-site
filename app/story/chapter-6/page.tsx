@@ -1,4 +1,12 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title:
+    "Congo: A Giant That Struggles to Hold Itself Together | Chapter 6 | Rwanda–DRC Site",
+  description:
+    "Chapter 6 examines the Congolese state’s uneven reach, weak territorial control, mineral wealth, and the challenge of building durable authority in the east."
+}
 
 export default function ChapterSixPage() {
   return (

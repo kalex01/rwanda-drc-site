@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "The War Economy | Chapter 4 | Rwanda–DRC Site",
+  description:
+    "Chapter 4 examines the war economy in eastern Congo, showing how insecurity, extraction, transport routes, and armed influence combine into a self-sustaining conflict system."
+}
 
 export default function ChapterFourPage() {
   return (

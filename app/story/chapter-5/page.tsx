@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Rwanda’s Strategic Mindset | Chapter 5 | Rwanda–DRC Site",
+  description:
+    "Chapter 5 examines Rwanda’s strategic mindset through historical memory, security vigilance, state discipline, and regional economic positioning."
+}
 
 export default function ChapterFivePage() {
   return (

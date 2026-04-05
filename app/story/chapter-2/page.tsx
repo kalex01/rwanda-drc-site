@@ -1,4 +1,11 @@
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Historical Roots of the Conflict | Chapter 2 | Rwanda–DRC Site",
+  description:
+    "Chapter 2 examines the historical roots of the Rwanda–DRC conflict, including colonial legacies, weak state development, the 1994 genocide, and the Congo wars."
+}
 
 export default function ChapterTwoPage() {
   return (
