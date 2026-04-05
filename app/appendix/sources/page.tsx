@@ -56,22 +56,36 @@ const sourceGroups = [
 
 export default function SourcesPage() {
   return (
-    <main className="mx-auto max-w-5xl px-6 py-10">
-      <div className="mb-6">
-        <Link href="/appendix" className="underline">
-          ← Back to Appendix
-        </Link>
-      </div>
+    <div className="mx-auto max-w-3xl">
+      <Link
+        href="/appendix"
+        className="inline-flex items-center rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+      >
+        ← Back to Appendix
+      </Link>
 
-      <h1 className="text-4xl font-bold">Sources</h1>
-      <p className="mt-4 text-lg">
-        Reference organizations, research institutions, and news sources relevant to the conflict.
+      <p className="mt-8 text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+        Sources
       </p>
 
-      <div className="mt-8 space-y-8">
+      <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+        Reference organizations and research sources
+      </h1>
+
+      <p className="mt-5 text-lg leading-8 text-slate-700">
+        This section lists organizations, research institutions, and reporting
+        sources relevant to the conflict and the broader regional context.
+      </p>
+
+      <div className="mt-10 space-y-6">
         {sourceGroups.map((group) => (
-          <section key={group.title} className="rounded-2xl border p-6 shadow-sm">
-            <h2 className="text-2xl font-semibold">{group.title}</h2>
+          <section
+            key={group.title}
+            className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm"
+          >
+            <h2 className="text-2xl font-semibold text-slate-900">
+              {group.title}
+            </h2>
 
             <ul className="mt-4 space-y-3">
               {group.items.map((item) => (
@@ -80,7 +94,7 @@ export default function SourcesPage() {
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline"
+                    className="font-medium text-blue-700 transition hover:underline"
                   >
                     {item.name}
                   </a>
@@ -90,6 +104,6 @@ export default function SourcesPage() {
           </section>
         ))}
       </div>
-    </main>
+    </div>
   )
 }

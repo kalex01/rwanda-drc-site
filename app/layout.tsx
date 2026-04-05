@@ -9,15 +9,17 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
     <html lang="en">
-      <body>
-        <SiteHeader />
-        {children}
+      <body className="bg-slate-50 text-slate-900 antialiased">
+        <div className="min-h-screen">
+          <SiteHeader />
+          {children}
+        </div>
       </body>
     </html>
   )

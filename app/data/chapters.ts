@@ -8,110 +8,86 @@ export type Chapter = {
 export const chapters: Record<string, Chapter> = {
   "chapter-1": {
     slug: "chapter-1",
-    title: "Chapter 1",
-    summary: "Introduction and conflict overview.",
-    content: [
-      "Paste your Chapter 1 content here.",
-      "You can split the chapter into multiple paragraphs by adding more items to this array."
-    ]
+    title: "Introduction",
+    summary:
+      "An opening overview of the Rwanda–DRC conflict as an interconnected system shaped by history, insecurity, sovereignty, extraction, and regional rivalry.",
+    content: []
   },
   "chapter-2": {
     slug: "chapter-2",
-    title: "Chapter 2",
-    summary: "Historical background and regional context.",
-    content: [
-      "Paste your Chapter 2 content here.",
-      "Add as many paragraphs as needed."
-    ]
+    title: "Historical Roots of the Conflict",
+    summary:
+      "A look at the deeper historical foundations of the crisis, including colonial legacies, weak state development, the 1994 genocide, and the Congo wars.",
+    content: []
   },
   "chapter-3": {
     slug: "chapter-3",
-    title: "Chapter 3",
-    summary: "Origins of the current conflict dynamics.",
-    content: [
-      "Paste your Chapter 3 content here.",
-      "Add as many paragraphs as needed."
-    ]
+    title: "The Land Beneath the Conflict",
+    summary:
+      "An examination of eastern Congo’s geography, mineral wealth, fragmented control, and the way strategic resources shape the conflict system.",
+    content: []
   },
   "chapter-4": {
     slug: "chapter-4",
-    title: "Chapter 4",
-    summary: "Political and military developments.",
-    content: [
-      "Paste your Chapter 4 content here.",
-      "Add as many paragraphs as needed."
-    ]
+    title: "The War Economy",
+    summary:
+      "A study of how insecurity, extraction, transport routes, and armed influence combine to create a self-sustaining conflict economy.",
+    content: []
   },
   "chapter-5": {
     slug: "chapter-5",
-    title: "Chapter 5",
-    summary: "Rwanda’s role and strategic outlook.",
-    content: [
-      "Paste your Chapter 5 content here.",
-      "Add as many paragraphs as needed."
-    ]
+    title: "Rwanda’s Strategic Mindset",
+    summary:
+      "An analysis of Rwanda’s regional posture through the lenses of security memory, vigilance, discipline, and strategic ambition.",
+    content: []
   },
   "chapter-6": {
     slug: "chapter-6",
-    title: "Chapter 6",
-    summary: "The DRC state and internal constraints.",
-    content: [
-      "Paste your Chapter 6 content here.",
-      "Add as many paragraphs as needed."
-    ]
+    title: "Congo: A Giant That Struggles to Hold Itself Together",
+    summary:
+      "A discussion of the Congolese state’s uneven reach, weak territorial control, mineral wealth, and the challenge of building lasting authority in the east.",
+    content: []
   },
   "chapter-7": {
     slug: "chapter-7",
-    title: "Chapter 7",
-    summary: "M23 and non-state armed actors.",
-    content: [
-      "Paste your Chapter 7 content here.",
-      "Add as many paragraphs as needed."
-    ]
+    title: "The Regional Chessboard",
+    summary:
+      "A chapter on the wider regional struggle, showing how neighboring states project power, pursue security, and remain entangled in eastern Congo.",
+    content: []
   },
   "chapter-8": {
     slug: "chapter-8",
-    title: "Chapter 8",
-    summary: "Regional diplomacy and external pressure.",
-    content: [
-      "Paste your Chapter 8 content here.",
-      "Add as many paragraphs as needed."
-    ]
+    title: "The Global Layer",
+    summary:
+      "An exploration of how local extraction in eastern Congo connects to regional gateways, global supply chains, and international debates over traceability and responsibility.",
+    content: []
   },
   "chapter-9": {
     slug: "chapter-9",
-    title: "Chapter 9",
-    summary: "Humanitarian consequences and displacement.",
-    content: [
-      "Paste your Chapter 9 content here.",
-      "Add as many paragraphs as needed."
-    ]
+    title: "The Narrative Battle",
+    summary:
+      "A look at the struggle over interpretation, legitimacy, and competing explanations that shape diplomacy, public perception, and political response.",
+    content: []
   },
   "chapter-10": {
     slug: "chapter-10",
-    title: "Chapter 10",
-    summary: "International response and mediation efforts.",
-    content: [
-      "Paste your Chapter 10 content here.",
-      "Add as many paragraphs as needed."
-    ]
+    title: "The Human Cost",
+    summary:
+      "A chapter focused on displacement, insecurity, disrupted education, fragile livelihoods, and the everyday burden carried by civilians.",
+    content: []
   },
   "chapter-11": {
     slug: "chapter-11",
-    title: "Chapter 11",
-    summary: "Competing narratives and disputed claims.",
-    content: [
-      "Paste your Chapter 11 content here.",
-      "Add as many paragraphs as needed."
-    ]
+    title: "Can the Cycle Be Broken?",
+    summary:
+      "An assessment of what would be required to break the conflict cycle through state continuity, regional security, economic reform, and international responsibility.",
+    content: []
   },
   "chapter-12": {
     slug: "chapter-12",
-    title: "Chapter 12",
-    summary: "Conclusion and forward-looking analysis.",
-    content: [
-      "Paste your Chapter 12 content here.",
-      "Add as many paragraphs as needed."
-    ]
+    title: "Conclusion",
+    summary:
+      "A final synthesis of the conflict’s historical, territorial, economic, regional, and global layers, and the possibility of a different future.",
+    content: []
   }
 }

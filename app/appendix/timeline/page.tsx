@@ -47,27 +47,43 @@ const timelineEvents = [
 
 export default function TimelinePage() {
   return (
-    <main className="mx-auto max-w-5xl px-6 py-10">
-      <div className="mb-6">
-        <Link href="/appendix" className="underline">
-          ← Back to Appendix
-        </Link>
-      </div>
+    <div className="mx-auto max-w-3xl">
+      <Link
+        href="/appendix"
+        className="inline-flex items-center rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+      >
+        ← Back to Appendix
+      </Link>
 
-      <h1 className="text-4xl font-bold">Timeline</h1>
-      <p className="mt-4 text-lg">
-        Major dates and turning points referenced throughout the site.
+      <p className="mt-8 text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+        Timeline
       </p>
 
-      <div className="mt-8 space-y-6">
+      <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+        Major dates and turning points
+      </h1>
+
+      <p className="mt-5 text-lg leading-8 text-slate-700">
+        This timeline highlights major historical moments and conflict-related
+        developments referenced throughout the site.
+      </p>
+
+      <div className="mt-10 space-y-5">
         {timelineEvents.map((item) => (
-          <section key={`${item.year}-${item.title}`} className="rounded-2xl border p-6 shadow-sm">
-            <p className="text-sm font-semibold uppercase tracking-wide">{item.year}</p>
-            <h2 className="mt-2 text-2xl font-semibold">{item.title}</h2>
-            <p className="mt-3 leading-7">{item.description}</p>
+          <section
+            key={`${item.year}-${item.title}`}
+            className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm"
+          >
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+              {item.year}
+            </p>
+            <h2 className="mt-2 text-2xl font-semibold text-slate-900">
+              {item.title}
+            </h2>
+            <p className="mt-3 leading-7 text-slate-700">{item.description}</p>
           </section>
         ))}
       </div>
-    </main>
+    </div>
   )
 }
