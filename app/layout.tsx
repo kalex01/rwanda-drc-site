@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   type: "website",
   locale: "en_CA",
   siteName: "Rwanda–DRC Site",
-  url: "https://yourdomain.com", // update after deployment
+  url: "http://localhost:3000", // update after deployment
   images: [
     {
       url: "/og-preview.png",
