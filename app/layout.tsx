@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://rwanda-drc-site.vercel.app",
     images: [
       {
-        url: "https://rwanda-drc-site.vercel.app/og-preview.png",
+        url: "https://https://rwanda-drc-site.vercel.app/og-preview.png",
         width: 1200,
         height: 630,
         alt: "Rwanda–DRC Conflict Overview"
