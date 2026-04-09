@@ -1,6 +1,12 @@
 import type { Metadata } from "next"
+import { Geist } from "next/font/google"
 import "./globals.css"
 import SiteHeader from "@/app/components/SiteHeader"
+import SiteFooter from "@/app/components/SiteFooter"
+
+const geist = Geist({
+  subsets: ["latin"]
+})
 
 export const metadata: Metadata = {
   title: {
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
     url: "https://rwanda-drc-site.vercel.app",
     images: [
       {
-        url: "https://https://rwanda-drc-site.vercel.app/og-preview.png",
+        url: "https://rwanda-drc-site.vercel.app/og-preview.png",
         width: 1200,
         height: 630,
         alt: "Rwanda–DRC Conflict Overview"
@@ -42,10 +48,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-slate-50 text-slate-900 antialiased">
+      <body className={`${geist.className} bg-slate-50 text-slate-900 antialiased`}>
         <div className="min-h-screen">
           <SiteHeader />
           {children}
+          <SiteFooter />
         </div>
       </body>
     </html>
