@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 
 export default function ChapterTwoPage() {
   return (
-    <article className="mx-auto max-w-3xl">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+    <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 md:py-14">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
         Chapter 2
       </p>
 
-      <h1 className="mt-4 text-4xl font-bold leading-tight text-slate-900 md:text-5xl">
+      <h1 className="mt-4 text-3xl font-bold leading-tight text-slate-900 md:text-5xl">
         Historical Roots of the Conflict
       </h1>
 
-      <p className="mt-8 text-lg leading-8 text-slate-700">
+      <p className="mt-8 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         The conflict in eastern Congo did not begin with one rebellion or one
         diplomatic crisis. Its foundations were laid much earlier, through a
         combination of colonial boundary-making, weak state development, and the
@@ -27,7 +27,7 @@ export default function ChapterTwoPage() {
         entered the modern era already burdened by fragility.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         Colonial administration left behind borders that were politically formal
         but socially and historically complicated. After independence, neither
         Rwanda nor Congo entered a period of stable institutional
@@ -38,11 +38,11 @@ export default function ChapterTwoPage() {
         and fragmented authority.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         1994 as regional rupture
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         The decisive rupture came in 1994 with the genocide in Rwanda. The end
         of the genocide did not produce a clean regional reset. Instead, it
         generated movement on a massive scale. Large numbers of refugees and
@@ -52,7 +52,7 @@ export default function ChapterTwoPage() {
         strategically porous.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         For Rwanda, this changed the meaning of eastern Congo permanently. The
         region was no longer only a neighboring zone of instability. It became
         a place from which future threats could emerge. This perception, rooted
@@ -60,11 +60,11 @@ export default function ChapterTwoPage() {
         Rwanda’s strategic reading of the east.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         The Congo wars and their legacy
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         The First and Second Congo Wars deepened this regional entanglement.
         Foreign armies entered Congolese territory. Alliances formed and broke.
         Eastern Congo became not only a battlefield, but an arena in which
@@ -74,7 +74,7 @@ export default function ChapterTwoPage() {
         Congo and its neighbors.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         Even after formal peace agreements, the deeper patterns did not
         disappear. Armed groups adapted. Local and regional networks remained.
         Trade routes continued to operate. Mistrust survived diplomatic
@@ -83,11 +83,11 @@ export default function ChapterTwoPage() {
         fragmented but persistent system of instability.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         Why history still governs the present
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         This historical background matters because current tensions are not
         simply the result of present-day opportunism. They are also shaped by
         inherited fears, past violence, and institutions that never fully
@@ -98,7 +98,7 @@ export default function ChapterTwoPage() {
         as part of regional political life.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         History, in this region, is not background. It is active. It informs
         how events are interpreted, how states justify their actions, and why
         mistrust remains so durable even when diplomacy appears to move

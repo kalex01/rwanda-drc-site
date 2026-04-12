@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 
 export default function ChapterOnePage() {
   return (
-    <article className="mx-auto max-w-3xl">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+    <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 md:py-14">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
         Chapter 1
       </p>
 
-      <h1 className="mt-4 text-4xl font-bold leading-tight text-slate-900 md:text-5xl">
+      <h1 className="mt-4 text-3xl font-bold leading-tight text-slate-900 md:text-5xl">
         Introduction
       </h1>
 
-      <p className="mt-8 text-lg leading-8 text-slate-700">
+      <p className="mt-8 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         The Rwanda–DRC conflict is often described as if it were one thing: a
         border problem, a rebel problem, a mineral problem, or a failure of
         governance. Each of these descriptions captures part of the truth. None
@@ -28,7 +28,7 @@ export default function ChapterOnePage() {
         another over time.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         Eastern Congo lies at the center of this system. It is rich in gold,
         coltan, tin, and tungsten—resources that are deeply connected to the
         global economy. Yet it is also one of the most unstable regions in the
@@ -38,11 +38,11 @@ export default function ChapterOnePage() {
         persistent cross-border insecurity.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         More than a local conflict
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         It is tempting to think of eastern Congo as a distant crisis affecting
         only those who live there. But the region cannot be understood in
         strictly local terms. Its instability has shaped relations between
@@ -52,7 +52,7 @@ export default function ChapterOnePage() {
         supply chains.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         This means the conflict operates at several levels at once. Locally, it
         affects families, markets, schools, and movement. Regionally, it shapes
         security calculations, alliances, and mistrust. Globally, it connects
@@ -60,11 +60,11 @@ export default function ChapterOnePage() {
         back to unstable origins.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         The central tension
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         At the heart of the Rwanda–DRC nexus lies a tension that has never been
         fully resolved. For the Democratic Republic of the Congo, the issue is
         fundamentally about sovereignty, territorial control, and the challenge
@@ -73,7 +73,7 @@ export default function ChapterOnePage() {
         the border as someone else’s problem.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         These perspectives are not merely rhetorical. They shape how events are
         interpreted, how states justify their actions, and why diplomacy often
         begins from incompatible assumptions. One side emphasizes territorial
@@ -82,11 +82,11 @@ export default function ChapterOnePage() {
         being fully reconciled.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         Reading the conflict as a system
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         This project approaches the conflict not as a sequence of isolated
         episodes, but as an interconnected structure. Armed groups do not exist
         separately from mineral routes. Mineral routes do not exist separately
@@ -95,7 +95,7 @@ export default function ChapterOnePage() {
         separately from history.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         To understand eastern Congo responsibly, one must therefore be willing
         to hold several realities together at once: the memory of genocide, the
         fragility of the Congolese state, the strategic calculations of Rwanda,
@@ -104,7 +104,7 @@ export default function ChapterOnePage() {
         suffering.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         This is what the chapters that follow attempt to do. They do not offer
         a single cause or a single solution. Instead, they trace the layers of
         a conflict whose complexity is precisely what has allowed it to endure.

@@ -53,17 +53,17 @@ export default function HomePage() {
           <div className="absolute left-1/2 top-0 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-blue-100/40 blur-3xl" />
         </div>
 
-        <div className="mx-auto max-w-6xl px-6 pb-14 pt-16 md:pb-20 md:pt-24">
-          <div className="rounded-[2rem] border border-slate-200/80 bg-white/85 p-8 shadow-[0_10px_40px_rgba(15,23,42,0.06)] backdrop-blur md:p-14">
+        <div className="mx-auto max-w-4xl px-4 pb-10 pt-12 sm:px-6 lg:px-8 md:pb-16 md:pt-20">
+          <div className="rounded-[2rem] border border-slate-200/80 bg-white/85 px-5 py-8 shadow-[0_10px_40px_rgba(15,23,42,0.06)] backdrop-blur md:px-10 md:py-12">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-blue-700">
               Rwanda–DRC Site
             </p>
 
-            <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl md:leading-[1.05]">
+            <h1 className="mt-5 max-w-4xl text-3xl font-semibold tracking-tight text-slate-950 md:text-6xl md:leading-[1.05]">
               Understanding the Rwanda–DRC conflict with clarity and structure
             </h1>
 
-            <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
+            <p className="mt-6 max-w-2xl text-base leading-7 text-slate-600 text-justify md:text-left md:text-lg md:leading-8">
               Explore the conflict through organized chapters, actor profiles,
               and reference material designed to make a complex regional issue
               easier to follow.
@@ -99,7 +99,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-6 md:py-10">
+      <section className="mx-auto max-w-4xl px-4 py-6 sm:px-6 lg:px-8 md:py-10">
         <div className="grid gap-6 md:grid-cols-3">
           {quickLinks.map((item) => (
             <Link
@@ -128,9 +128,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-10 md:py-14">
+      <section className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 md:py-12">
         <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+          <div className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
               Project overview
             </p>
@@ -139,7 +139,7 @@ export default function HomePage() {
               A structured reading experience
             </h2>
 
-            <p className="mt-4 max-w-2xl text-base leading-8 text-slate-600">
+            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600 md:leading-8">
               The site is organized to help readers move between broad context,
               key actors, and reference material without losing continuity. It
               is designed to support both first-time readers and more targeted
@@ -164,7 +164,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-8 text-white shadow-sm md:p-10">
+          <div className="rounded-[2rem] border border-slate-200 bg-slate-950 px-5 py-8 text-white shadow-sm md:px-10 md:py-12">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-blue-200">
               Focus
             </p>

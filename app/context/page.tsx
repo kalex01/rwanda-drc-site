@@ -146,24 +146,24 @@ const whyItMatters = [
 export default function ContextPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50/30">
-      <section className="mx-auto max-w-6xl px-6 pb-10 pt-16 md:pb-14 md:pt-20">
-        <div className="rounded-[2rem] border border-slate-200 bg-white/90 p-8 shadow-sm md:p-12">
+      <section className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8 md:py-14">
+        <div className="rounded-[2rem] border border-slate-200 bg-white/90 px-5 py-8 shadow-sm md:px-10 md:py-12">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
             Context page
           </p>
 
-          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 md:text-5xl">
+          <h1 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">
             Geographic context, leadership, accountability, and diplomacy
           </h1>
 
-          <p className="mt-6 max-w-3xl text-base leading-8 text-slate-600 md:text-lg">
+          <p className="mt-5 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
             This page is designed to put the basic facts in front of the reader:
             where Rwanda and the DRC are located, which major events shaped the
             conflict, who the principal state leaders are, what international
             accountability has looked like, and how recent diplomacy has evolved.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-7 flex flex-wrap gap-3">
             <Link
               href="/actors"
               className="inline-flex items-center rounded-xl bg-slate-950 px-5 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5"
@@ -180,25 +180,26 @@ export default function ContextPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-8 md:py-12">
-        <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+      <section className="mx-auto max-w-4xl px-4 py-2 sm:px-6 lg:px-8 md:py-4">
+        <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
+          <div className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
               Geographic context
             </p>
 
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950">
+            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
               Where the conflict is taking place
             </h2>
 
-            <p className="mt-4 max-w-2xl text-base leading-8 text-slate-600">
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
               The conflict is centered in eastern Democratic Republic of Congo,
               along the border with Rwanda. For many readers, this is the first
               missing piece: the crisis is regional, but the most active military
-              theatre is in eastern DRC, especially around North Kivu and South Kivu.
+              theatre is in eastern DRC, especially around North Kivu and South
+              Kivu.
             </p>
 
-            <div className="mt-8 rounded-[2rem] border border-slate-200 bg-white p-4 shadow-sm">
+            <div className="mt-6 rounded-[1.5rem] border border-slate-200 bg-white p-4 shadow-sm md:p-5">
               <img
                 src="/map-central-africa.png"
                 alt="Map showing Rwanda and Democratic Republic of Congo"
@@ -245,11 +246,12 @@ export default function ContextPage() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-8 text-white shadow-sm md:p-10">
+          <div className="rounded-[2rem] border border-slate-200 bg-slate-950 px-5 py-8 text-white shadow-sm md:px-10 md:py-12">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-blue-200">
               Why this matters
             </p>
-            <ul className="mt-6 space-y-4 text-sm leading-7 text-slate-200">
+
+            <ul className="mt-5 space-y-3 text-base leading-7 text-slate-200 md:text-lg md:leading-8">
               {whyItMatters.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -258,28 +260,29 @@ export default function ContextPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-8 md:py-12">
-        <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+      <section className="mx-auto max-w-4xl px-4 py-2 sm:px-6 lg:px-8 md:py-4">
+        <div className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
             Timeline
           </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950">
+
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
             Key events that shaped the conflict
           </h2>
 
-          <div className="mt-8 space-y-5">
+          <div className="mt-6 space-y-4">
             {timeline.map((item) => (
               <div
                 key={`${item.years}-${item.title}`}
-                className="rounded-2xl border border-slate-200 bg-slate-50 p-6"
+                className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 md:px-6 md:py-6"
               >
                 <p className="text-sm font-semibold text-blue-700">
                   {item.years}
                 </p>
-                <h3 className="mt-2 text-xl font-semibold text-slate-950">
+                <h3 className="mt-2 text-lg font-semibold text-slate-950 md:text-xl">
                   {item.title}
                 </h3>
-                <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
+                <p className="mt-3 max-w-3xl text-base leading-7 text-slate-600">
                   {item.text}
                 </p>
               </div>
@@ -288,34 +291,34 @@ export default function ContextPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-8 md:py-12">
-        <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+      <section className="mx-auto max-w-4xl px-4 py-2 sm:px-6 lg:px-8 md:py-4">
+        <div className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
             State leadership
           </p>
 
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950">
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
             Principal national leaders
           </h2>
 
-          <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
             The positions of Rwanda and the Democratic Republic of Congo are
             largely shaped by their respective national leadership. Public
             statements, diplomatic engagement, and security policies have all
             played a central role in shaping the trajectory of the conflict.
           </p>
 
-          <div className="mt-8 space-y-6">
+          <div className="mt-6 space-y-5">
             {leaders.map((item) => (
               <div
                 key={`${item.country}-${item.name}`}
-                className="rounded-2xl border border-slate-200 bg-slate-50 p-6"
+                className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 md:px-6 md:py-6"
               >
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
                   {item.country}
                 </p>
 
-                <h3 className="mt-2 text-xl font-semibold text-slate-950">
+                <h3 className="mt-2 text-lg font-semibold text-slate-950 md:text-xl">
                   {item.name}
                 </h3>
 
@@ -323,18 +326,18 @@ export default function ContextPage() {
                   {item.role}
                 </p>
 
-                <p className="mt-4 text-sm leading-7 text-slate-600">
+                <p className="mt-4 text-base leading-7 text-slate-600">
                   {item.summary}
                 </p>
 
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-base leading-7 text-slate-600">
                   <span className="font-semibold text-slate-900">
                     Public position:
                   </span>{" "}
                   {item.publicPosition}
                 </p>
 
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-base leading-7 text-slate-600">
                   <span className="font-semibold text-slate-900">
                     Role in the conflict:
                   </span>{" "}
@@ -342,7 +345,7 @@ export default function ContextPage() {
                 </p>
 
                 <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
-                  <p className="text-sm leading-7 text-slate-600">
+                  <p className="text-base leading-7 text-slate-600">
                     <span className="font-semibold text-slate-900">
                       Method note:
                     </span>{" "}
@@ -355,17 +358,17 @@ export default function ContextPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-8 md:py-12">
-        <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+      <section className="mx-auto max-w-4xl px-4 py-2 sm:px-6 lg:px-8 md:py-4">
+        <div className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
             Accountability
           </p>
 
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950">
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
             International cases and legal context
           </h2>
 
-          <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
             The Rwanda–DRC conflict intersects with multiple international legal
             processes, including tribunals, sanctions regimes, and conflict
             monitoring. These mechanisms do not all do the same thing: criminal
@@ -373,91 +376,91 @@ export default function ContextPage() {
             pressure, monitoring, and international policy response.
           </p>
 
-          <div className="mt-8 space-y-6">
+          <div className="mt-6 space-y-5">
             {accountability.map((item) => (
               <div
                 key={item.title}
-                className="rounded-2xl border border-slate-200 bg-slate-50 p-6"
+                className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 md:px-6 md:py-6"
               >
-                <h3 className="text-lg font-semibold text-slate-950">
+                <h3 className="text-lg font-semibold text-slate-950 md:text-xl">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-base leading-7 text-slate-600">
                   {item.text}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="mt-8 rounded-2xl border border-blue-200 bg-blue-50 p-6">
-            <h3 className="text-lg font-semibold text-slate-950">
+          <div className="mt-6 rounded-2xl border border-blue-200 bg-blue-50 px-5 py-5 md:px-6 md:py-6">
+            <h3 className="text-lg font-semibold text-slate-950 md:text-xl">
               Reading this section carefully
             </h3>
-            <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-700">
+            <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
               This page distinguishes between court convictions, sanctions, and
               allegations in reporting. A conviction follows a criminal judicial
               process. Sanctions are executive measures. UN and expert reports
-              may shape international understanding without themselves being final
-              court judgments.
+              may shape international understanding without themselves being
+              final court judgments.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-8 md:py-12">
-        <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+      <section className="mx-auto max-w-4xl px-4 py-2 sm:px-6 lg:px-8 md:py-4">
+        <div className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
             Diplomacy
           </p>
 
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950">
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
             Recent mediation and de-escalation efforts
           </h2>
 
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
             {diplomacy.map((item) => (
               <div
                 key={item.title}
-                className="rounded-2xl border border-slate-200 bg-slate-50 p-6"
+                className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 md:px-6 md:py-6"
               >
-                <h3 className="text-lg font-semibold text-slate-950">
+                <h3 className="text-lg font-semibold text-slate-950 md:text-xl">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-base leading-7 text-slate-600">
                   {item.text}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="mt-8 rounded-2xl border border-blue-200 bg-blue-50 p-6">
-            <h3 className="text-lg font-semibold text-slate-950">
+          <div className="mt-6 rounded-2xl border border-blue-200 bg-blue-50 px-5 py-5 md:px-6 md:py-6">
+            <h3 className="text-lg font-semibold text-slate-950 md:text-xl">
               Sanctions context
             </h3>
-            <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-700">
+            <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
               Recent diplomacy has unfolded alongside sanctions and public
               pressure. That combination reflects a broader international effort
-              to influence state behavior, reduce armed confrontation, and support
-              de-escalation.
+              to influence state behavior, reduce armed confrontation, and
+              support de-escalation.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-16 pt-8 md:pb-20">
-        <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-8 text-white shadow-sm md:p-10">
+      <section className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8 md:py-14">
+        <div className="rounded-[2rem] border border-slate-200 bg-slate-950 px-5 py-8 text-white shadow-sm md:px-10 md:py-12">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-blue-200">
             Editorial note
           </p>
 
-          <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-200">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-200 md:text-lg md:leading-8">
             This page is intentionally factual and high-level. It keeps the
             focus on geography, chronology, leadership, diplomacy, and confirmed
             legal context so readers can understand the structure of the crisis
             before going deeper into detail.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-7 flex flex-wrap gap-3">
             <Link
               href="/chapters"
               className="inline-flex items-center rounded-xl bg-white px-5 py-3 text-sm font-medium text-slate-950 transition hover:bg-slate-100"

@@ -20,16 +20,16 @@ const featuredLinks = [
 
 export default function StoryIndexPage() {
   return (
-    <div>
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+    <div className="px-4 py-10 sm:px-6 lg:px-8 md:py-14">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
         Story
       </p>
 
-      <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+      <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
         Narrative chapter overview
       </h1>
 
-      <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-700">
+      <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         This section contains the chapter-based narrative of the Rwanda–DRC
         site. Use it to move through the story in sequence or jump directly to
         the full chapter index.
@@ -58,7 +58,7 @@ export default function StoryIndexPage() {
             href={item.href}
             className="block rounded-2xl border border-slate-200 bg-slate-50 p-5 transition hover:-translate-y-1 hover:bg-white hover:shadow-md"
           >
-            <h2 className="text-xl font-semibold text-slate-900">
+            <h2 className="text-lg font-semibold text-slate-900 md:text-xl">
               {item.title}
             </h2>
             <p className="mt-3 text-sm leading-6 text-slate-700">

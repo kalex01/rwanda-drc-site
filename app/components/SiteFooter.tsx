@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function SiteFooter() {
   return (
     <footer className="border-t border-slate-200 bg-white">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
+      <div className="mx-auto flex max-w-6xl flex-col gap-5 px-4 py-8 sm:px-6 md:flex-row md:items-center md:justify-between md:py-10">
         <div>
           <p className="text-sm font-semibold text-slate-900">
             Rwanda–DRC Site
@@ -14,7 +14,7 @@ export default function SiteFooter() {
           </p>
         </div>
 
-        <nav className="flex flex-wrap gap-5 text-sm text-slate-600">
+        <nav className="flex flex-wrap gap-4 text-sm text-slate-600 md:gap-5">
           <Link href="/chapters" className="transition hover:text-slate-900">
             Chapters
           </Link>

@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 
 export default function ChapterTenPage() {
   return (
-    <article className="mx-auto max-w-3xl">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+    <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 md:py-14">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
         Chapter 10
       </p>
 
-      <h1 className="mt-4 text-4xl font-bold leading-tight text-slate-900 md:text-5xl">
+      <h1 className="mt-4 text-3xl font-bold leading-tight text-slate-900 md:text-5xl">
         The Human Cost
       </h1>
 
-      <p className="mt-8 text-lg leading-8 text-slate-700">
+      <p className="mt-8 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         It is possible to discuss eastern Congo in terms of states, armed
         groups, mineral routes, and regional strategy for a long time without
         speaking about the people who live inside the system. Yet their lives
@@ -27,7 +27,7 @@ export default function ChapterTenPage() {
         uncertainty, movement, interruption, and endurance.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         In places touched by repeated insecurity, time itself is experienced
         differently. Stability is not assumed. It is temporary, conditional,
         and often fragile. A road may be usable for months, then suddenly not.
@@ -37,11 +37,11 @@ export default function ChapterTenPage() {
         of violent moments. It is also a long pattern of interrupted normalcy.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         Life under uncertainty
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         For many households, the central question is not long-term planning
         but short-term safety. Can children travel to school? Can goods reach
         the market? Can one sleep in the same place next week? These are not
@@ -50,7 +50,7 @@ export default function ChapterTenPage() {
         become difficult to sustain.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         Displacement is one of the clearest expressions of this insecurity.
         People do not always flee because a battle is taking place directly in
         front of them. Often they move because uncertainty itself becomes too
@@ -60,11 +60,11 @@ export default function ChapterTenPage() {
         a place that seems marginally safer.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         Children shaped by interruption
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         For children, the effects are both immediate and long-lasting.
         Education becomes fragmented. Schooling may stop and restart multiple
         times. Teachers may leave. Families may be relocated. Entire years of
@@ -74,7 +74,7 @@ export default function ChapterTenPage() {
         life differently from one raised in continuity.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         Over time, the abnormal becomes familiar. The presence of armed actors,
         the sudden movement of people, the caution around roads and gatherings
         — these become part of what feels ordinary. This normalization is one
@@ -82,11 +82,11 @@ export default function ChapterTenPage() {
         communities come to consider possible or realistic.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         Work reduced to survival
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         The economic effects are equally severe. In stable settings, work can
         serve as a bridge toward improvement. In conflict-affected zones, work
         is often reduced to immediate survival. Mining, small trade, transport,
@@ -96,7 +96,7 @@ export default function ChapterTenPage() {
         create security for the people performing them.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         This is where the human cost and the economic structure intersect. The
         same resources that connect the region to global markets do not
         guarantee protection for those living closest to them. On the contrary,
@@ -105,11 +105,11 @@ export default function ChapterTenPage() {
         translate into dignity in everyday life.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         Resilience without romanticizing suffering
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         It is important to recognize resilience, but not to romanticize it.
         Communities continue to rebuild. Markets return. Families reorganize.
         Social life persists in forms both quiet and practical. But resilience
@@ -118,7 +118,7 @@ export default function ChapterTenPage() {
         that should not have become normal.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         The human cost of the Rwanda–DRC conflict is therefore not only counted
         in deaths, though those are grave enough. It is also measured in
         deferred futures, disrupted childhoods, interrupted education, repeated

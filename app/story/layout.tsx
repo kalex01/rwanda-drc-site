@@ -14,8 +14,8 @@ export default function StoryLayout({
 }>) {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50">
-      <section className="mx-auto max-w-6xl px-6 py-8">
-        <div className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm backdrop-blur md:p-5">
+      <section className="mx-auto max-w-4xl px-4 py-6 sm:px-6 lg:px-8 md:py-8">
+        <div className="rounded-2xl border border-slate-200 bg-white/80 p-3 shadow-sm backdrop-blur md:p-4">
           <nav className="flex flex-wrap gap-3 text-sm">
             <Link
               href="/"
@@ -39,8 +39,8 @@ export default function StoryLayout({
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-6 pb-16">
-        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+      <section className="mx-auto max-w-4xl px-4 pb-10 sm:px-6 lg:px-8 md:pb-16">
+        <div className="rounded-3xl border border-slate-200 bg-white shadow-sm">
           {children}
         </div>
       </section>

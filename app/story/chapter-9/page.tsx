@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 
 export default function ChapterNinePage() {
   return (
-    <article className="mx-auto max-w-3xl">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
+    <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 md:py-14">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
         Chapter 9
       </p>
 
-      <h1 className="mt-4 text-4xl font-bold leading-tight text-slate-900 md:text-5xl">
+      <h1 className="mt-4 text-3xl font-bold leading-tight text-slate-900 md:text-5xl">
         The Narrative Battle
       </h1>
 
-      <p className="mt-8 text-lg leading-8 text-slate-700">
+      <p className="mt-8 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         Conflicts are fought not only with weapons, but with explanations. In
         the Rwanda–DRC crisis, the battle over meaning is almost as important
         as the battle over territory. The same event can be narrated as
@@ -26,7 +26,7 @@ export default function ChapterNinePage() {
         survival depending on who is speaking and to whom they are speaking.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         This matters because narratives do more than describe. They shape
         legitimacy. They influence sanctions, diplomacy, international
         sympathy, and the range of actions considered acceptable. In this
@@ -34,11 +34,11 @@ export default function ChapterNinePage() {
         its own right.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         Two dominant frames
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         One dominant narrative emphasizes regional interference, external
         backing to armed actors, and the idea that what is happening in eastern
         Congo cannot be understood as an internal problem alone. In this view,
@@ -47,7 +47,7 @@ export default function ChapterNinePage() {
         economic structure.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         The other dominant narrative emphasizes insecurity, the unfinished
         consequences of the post-1994 regional order, and the dangers posed by
         hostile armed groups near Rwanda’s border. In this telling, Rwanda’s
@@ -56,11 +56,11 @@ export default function ChapterNinePage() {
         influence and more as a site of unresolved threat.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         Why clarity is difficult
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         The difficulty is that both narratives draw on elements of reality,
         yet neither fully contains it. Security concerns are genuine. So are
         questions of sovereignty. Economic incentives matter. Historical memory
@@ -69,7 +69,7 @@ export default function ChapterNinePage() {
         political categorization.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         This is why responsible analysis must distinguish between documented
         facts, analytical inference, and contested allegation. If these layers
         are collapsed into one another, explanation becomes advocacy rather
@@ -79,11 +79,11 @@ export default function ChapterNinePage() {
         careless.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         Perception as political force
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         Perception has real consequences. A state seen as disciplined and
         effective gains room to shape events diplomatically. A state seen as
         weak or fragmented struggles to control the terms in which its crisis
@@ -92,7 +92,7 @@ export default function ChapterNinePage() {
         In each case, language influences response.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         This is especially important for a conflict like this one, where much
         of the struggle occurs in places that most external audiences never
         see directly. Reports, headlines, official statements, and diplomatic
@@ -100,11 +100,11 @@ export default function ChapterNinePage() {
         Whoever shapes those windows shapes part of the conflict itself.
       </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900">
+      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
         Beyond simplification
       </h2>
 
-      <p className="mt-4 text-lg leading-8 text-slate-700">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         The temptation in any complex crisis is to reduce it to a single key:
         one villain, one cause, one decisive interpretation. But the
         Rwanda–DRC conflict resists that impulse. It is a layered system in
@@ -113,7 +113,7 @@ export default function ChapterNinePage() {
         distorted solutions.
       </p>
 
-      <p className="mt-6 text-lg leading-8 text-slate-700">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
         The narrative battle therefore matters not because stories replace
         reality, but because stories shape how reality is acted upon. And in a
         conflict this complex, the struggle over meaning is part of the
