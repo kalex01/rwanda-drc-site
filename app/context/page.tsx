@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -6,6 +7,47 @@ export const metadata: Metadata = {
   description:
     "Geographic context, major milestones, leadership, accountability, and diplomacy related to the Rwanda–DRC conflict."
 }
+
+const referencePoints = [
+  {
+    value: "1994",
+    label: "Rwandan genocide",
+    text: "A foundational turning point for the wider regional crisis."
+  },
+  {
+    value: "1996–2003",
+    label: "Congo war period",
+    text: "The regional conflict escalated across two successive Congo wars."
+  },
+  {
+    value: "2",
+    label: "Principal states",
+    text: "Rwanda and the DRC remain at the center of interstate tension."
+  },
+  {
+    value: "North & South Kivu",
+    label: "Main conflict zone",
+    text: "Eastern DRC remains the core military and humanitarian theatre."
+  }
+]
+
+const structuralStats = [
+  {
+    value: "7",
+    label: "timeline markers",
+    text: "A concise chronology from 1994 to 2026."
+  },
+  {
+    value: "2",
+    label: "leader profiles",
+    text: "The page focuses on the main heads of state."
+  },
+  {
+    value: "3",
+    label: "diplomatic tracks",
+    text: "U.S., regional, and UN engagement."
+  }
+]
 
 const timeline = [
   {
@@ -64,7 +106,7 @@ const leaders = [
     policyRole:
       "His role in the conflict is therefore both strategic and diplomatic: Rwanda has remained active in regional talks while also rejecting international allegations that it has backed M23 militarily.",
     note:
-      "For credibility, this page focuses on documented public positions and state policy rather than unverified private comments."
+      "This section focuses on documented public positions and state policy rather than unverified private comments."
   },
   {
     country: "Democratic Republic of Congo",
@@ -77,7 +119,7 @@ const leaders = [
     policyRole:
       "His role combines military and diplomatic leadership: the DRC has pursued military responses on the ground while also seeking mediation through the United States, African regional processes, and the United Nations.",
     note:
-      "This page summarizes documented public positions and conflict-related policy, not private or unsourced conversations."
+      "This section summarizes documented public positions and conflict-related policy, not private or unsourced conversations."
   }
 ]
 
@@ -147,23 +189,24 @@ export default function ContextPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50/30">
       <section className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8 md:py-14">
-        <div className="rounded-[2rem] border border-slate-200 bg-white/90 px-5 py-8 shadow-sm md:px-10 md:py-12">
+        <div className="mx-auto max-w-3xl rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
             Context page
           </p>
 
-          <h1 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">
+          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">
             Geographic context, leadership, accountability, and diplomacy
           </h1>
 
-          <p className="mt-5 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
-            This page is designed to put the basic facts in front of the reader:
-            where Rwanda and the DRC are located, which major events shaped the
-            conflict, who the principal state leaders are, what international
-            accountability has looked like, and how recent diplomacy has evolved.
+          <p className="mt-5 text-base leading-7 text-slate-600 md:text-lg md:leading-8">
+            This page places the structure of the conflict in front of the
+            reader: where Rwanda and the DRC are located, which turning points
+            shaped the crisis, who the principal state leaders are, what
+            international accountability has looked like, and how recent
+            diplomacy has evolved.
           </p>
 
-          <div className="mt-7 flex flex-wrap gap-3">
+          <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/actors"
               className="inline-flex items-center rounded-xl bg-slate-950 px-5 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5"
@@ -171,12 +214,54 @@ export default function ContextPage() {
               Explore actors
             </Link>
             <Link
-              href="/appendix"
+              href="/timeline"
               className="inline-flex items-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-900 transition hover:bg-slate-50"
             >
-              Open appendix
+              Open timeline
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-4 pb-2 sm:px-6 lg:px-8 md:pb-4">
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          {referencePoints.map((item) => (
+            <div
+              key={item.label}
+              className="rounded-[1.5rem] border border-slate-200 bg-white px-5 py-6 shadow-sm"
+            >
+              <p className="text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+                {item.value}
+              </p>
+              <p className="mt-2 text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">
+                {item.label}
+              </p>
+              <p className="mt-3 text-base leading-7 text-slate-600">
+                {item.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-4 py-2 sm:px-6 lg:px-8 md:py-4">
+        <div className="grid gap-4 md:grid-cols-3">
+          {structuralStats.map((item) => (
+            <div
+              key={item.label}
+              className="rounded-[1.5rem] border border-blue-100 bg-blue-50/70 px-5 py-6"
+            >
+              <p className="text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+                {item.value}
+              </p>
+              <p className="mt-2 text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">
+                {item.label}
+              </p>
+              <p className="mt-3 text-base leading-7 text-slate-600">
+                {item.text}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -191,57 +276,68 @@ export default function ContextPage() {
               Where the conflict is taking place
             </h2>
 
-            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
+            <p className="mt-4 text-base leading-7 text-slate-600 md:text-lg md:leading-8">
               The conflict is centered in eastern Democratic Republic of Congo,
               along the border with Rwanda. For many readers, this is the first
-              missing piece: the crisis is regional, but the most active military
-              theatre is in eastern DRC, especially around North Kivu and South
-              Kivu.
+              missing piece: the crisis is regional, but the most active
+              military theatre is in eastern DRC, especially around North Kivu
+              and South Kivu.
             </p>
 
-            <div className="mt-6 rounded-[1.5rem] border border-slate-200 bg-white p-4 shadow-sm md:p-5">
-              <img
-                src="/map-central-africa.png"
-                alt="Map showing Rwanda and Democratic Republic of Congo"
-                className="w-full rounded-xl object-cover"
-              />
+            <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-50 shadow-sm">
+              <div className="relative aspect-[16/10] w-full">
+                <Image
+                  src="/map-central-africa.png"
+                  alt="Map showing Rwanda and Democratic Republic of Congo"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 800px"
+                />
+              </div>
 
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                <a
-                  href="https://www.google.com/maps/place/Rwanda"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-sm font-medium text-blue-700 hover:underline"
-                >
-                  View Rwanda on Google Maps →
-                </a>
+              <div className="border-t border-slate-200 px-4 py-4 md:px-5">
+                <p className="text-sm leading-6 text-slate-600">
+                  A simple reference map helps locate Rwanda, eastern DRC, Goma,
+                  and Kigali within the broader Central African setting.
+                </p>
 
-                <a
-                  href="https://www.google.com/maps/place/Democratic+Republic+of+the+Congo"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-sm font-medium text-blue-700 hover:underline"
-                >
-                  View DRC on Google Maps →
-                </a>
+                <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  <a
+                    href="https://www.google.com/maps/place/Rwanda"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm font-medium text-blue-700 hover:underline"
+                  >
+                    View Rwanda on Google Maps →
+                  </a>
 
-                <a
-                  href="https://www.google.com/maps/place/Goma"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-sm font-medium text-blue-700 hover:underline"
-                >
-                  View Goma on Google Maps →
-                </a>
+                  <a
+                    href="https://www.google.com/maps/place/Democratic+Republic+of+the+Congo"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm font-medium text-blue-700 hover:underline"
+                  >
+                    View DRC on Google Maps →
+                  </a>
 
-                <a
-                  href="https://www.google.com/maps/place/Kigali"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-sm font-medium text-blue-700 hover:underline"
-                >
-                  View Kigali on Google Maps →
-                </a>
+                  <a
+                    href="https://www.google.com/maps/place/Goma"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm font-medium text-blue-700 hover:underline"
+                  >
+                    View Goma on Google Maps →
+                  </a>
+
+                  <a
+                    href="https://www.google.com/maps/place/Kigali"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm font-medium text-blue-700 hover:underline"
+                  >
+                    View Kigali on Google Maps →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -251,9 +347,14 @@ export default function ContextPage() {
               Why this matters
             </p>
 
-            <ul className="mt-5 space-y-3 text-base leading-7 text-slate-200 md:text-lg md:leading-8">
+            <ul className="mt-5 space-y-4 text-base leading-7 text-slate-200 md:text-lg md:leading-8">
               {whyItMatters.map((item) => (
-                <li key={item}>{item}</li>
+                <li
+                  key={item}
+                  className="border-b border-slate-800 pb-4 last:border-b-0 last:pb-0"
+                >
+                  {item}
+                </li>
               ))}
             </ul>
           </div>
@@ -262,221 +363,24 @@ export default function ContextPage() {
 
       <section className="mx-auto max-w-4xl px-4 py-2 sm:px-6 lg:px-8 md:py-4">
         <div className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-            Timeline
-          </p>
+          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+                Timeline
+              </p>
 
-          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
-            Key events that shaped the conflict
-          </h2>
+              <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+                Key events that shaped the conflict
+              </h2>
+            </div>
+
+            <p className="max-w-xl text-sm leading-6 text-slate-500">
+              This compressed timeline is designed as an orientation tool before
+              readers move into longer analysis.
+            </p>
+          </div>
 
           <div className="mt-6 space-y-4">
             {timeline.map((item) => (
               <div
-                key={`${item.years}-${item.title}`}
-                className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 md:px-6 md:py-6"
-              >
-                <p className="text-sm font-semibold text-blue-700">
-                  {item.years}
-                </p>
-                <h3 className="mt-2 text-lg font-semibold text-slate-950 md:text-xl">
-                  {item.title}
-                </h3>
-                <p className="mt-3 max-w-3xl text-base leading-7 text-slate-600">
-                  {item.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-4xl px-4 py-2 sm:px-6 lg:px-8 md:py-4">
-        <div className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-            State leadership
-          </p>
-
-          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
-            Principal national leaders
-          </h2>
-
-          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
-            The positions of Rwanda and the Democratic Republic of Congo are
-            largely shaped by their respective national leadership. Public
-            statements, diplomatic engagement, and security policies have all
-            played a central role in shaping the trajectory of the conflict.
-          </p>
-
-          <div className="mt-6 space-y-5">
-            {leaders.map((item) => (
-              <div
-                key={`${item.country}-${item.name}`}
-                className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 md:px-6 md:py-6"
-              >
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                  {item.country}
-                </p>
-
-                <h3 className="mt-2 text-lg font-semibold text-slate-950 md:text-xl">
-                  {item.name}
-                </h3>
-
-                <p className="mt-1 text-sm font-medium text-blue-700">
-                  {item.role}
-                </p>
-
-                <p className="mt-4 text-base leading-7 text-slate-600">
-                  {item.summary}
-                </p>
-
-                <p className="mt-3 text-base leading-7 text-slate-600">
-                  <span className="font-semibold text-slate-900">
-                    Public position:
-                  </span>{" "}
-                  {item.publicPosition}
-                </p>
-
-                <p className="mt-3 text-base leading-7 text-slate-600">
-                  <span className="font-semibold text-slate-900">
-                    Role in the conflict:
-                  </span>{" "}
-                  {item.policyRole}
-                </p>
-
-                <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
-                  <p className="text-base leading-7 text-slate-600">
-                    <span className="font-semibold text-slate-900">
-                      Method note:
-                    </span>{" "}
-                    {item.note}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-4xl px-4 py-2 sm:px-6 lg:px-8 md:py-4">
-        <div className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-            Accountability
-          </p>
-
-          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
-            International cases and legal context
-          </h2>
-
-          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
-            The Rwanda–DRC conflict intersects with multiple international legal
-            processes, including tribunals, sanctions regimes, and conflict
-            monitoring. These mechanisms do not all do the same thing: criminal
-            courts determine guilt, while sanctions and UN reporting are tools of
-            pressure, monitoring, and international policy response.
-          </p>
-
-          <div className="mt-6 space-y-5">
-            {accountability.map((item) => (
-              <div
-                key={item.title}
-                className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 md:px-6 md:py-6"
-              >
-                <h3 className="text-lg font-semibold text-slate-950 md:text-xl">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-base leading-7 text-slate-600">
-                  {item.text}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-6 rounded-2xl border border-blue-200 bg-blue-50 px-5 py-5 md:px-6 md:py-6">
-            <h3 className="text-lg font-semibold text-slate-950 md:text-xl">
-              Reading this section carefully
-            </h3>
-            <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
-              This page distinguishes between court convictions, sanctions, and
-              allegations in reporting. A conviction follows a criminal judicial
-              process. Sanctions are executive measures. UN and expert reports
-              may shape international understanding without themselves being
-              final court judgments.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-4xl px-4 py-2 sm:px-6 lg:px-8 md:py-4">
-        <div className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-            Diplomacy
-          </p>
-
-          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
-            Recent mediation and de-escalation efforts
-          </h2>
-
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            {diplomacy.map((item) => (
-              <div
-                key={item.title}
-                className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 md:px-6 md:py-6"
-              >
-                <h3 className="text-lg font-semibold text-slate-950 md:text-xl">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-base leading-7 text-slate-600">
-                  {item.text}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-6 rounded-2xl border border-blue-200 bg-blue-50 px-5 py-5 md:px-6 md:py-6">
-            <h3 className="text-lg font-semibold text-slate-950 md:text-xl">
-              Sanctions context
-            </h3>
-            <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
-              Recent diplomacy has unfolded alongside sanctions and public
-              pressure. That combination reflects a broader international effort
-              to influence state behavior, reduce armed confrontation, and
-              support de-escalation.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8 md:py-14">
-        <div className="rounded-[2rem] border border-slate-200 bg-slate-950 px-5 py-8 text-white shadow-sm md:px-10 md:py-12">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-blue-200">
-            Editorial note
-          </p>
-
-          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-200 md:text-lg md:leading-8">
-            This page is intentionally factual and high-level. It keeps the
-            focus on geography, chronology, leadership, diplomacy, and confirmed
-            legal context so readers can understand the structure of the crisis
-            before going deeper into detail.
-          </p>
-
-          <div className="mt-7 flex flex-wrap gap-3">
-            <Link
-              href="/chapters"
-              className="inline-flex items-center rounded-xl bg-white px-5 py-3 text-sm font-medium text-slate-950 transition hover:bg-slate-100"
-            >
-              Return to chapters
-            </Link>
-
-            <Link
-              href="/actors"
-              className="inline-flex items-center rounded-xl border border-slate-700 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-900"
-            >
-              Open actor pages
-            </Link>
-          </div>
-        </div>
-      </section>
-    </main>
-  )
-}
+                key={`${item.years}-${
