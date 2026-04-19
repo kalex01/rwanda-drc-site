@@ -18,7 +18,7 @@ export default function ChapterThreePage() {
         The Land Beneath the Conflict
       </h1>
 
-      <p className="mt-8 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-8 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Eastern Congo is often described as a place of instability, but that
         description is incomplete. It is also a place of extraordinary value.
         Beneath its soil lies one of the richest concentrations of strategic
@@ -27,7 +27,7 @@ export default function ChapterThreePage() {
         single political explanation.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Geography plays a decisive role. The terrain is vast, mountainous in
         parts, and difficult to access. Infrastructure is limited, and state
         presence is uneven. In such an environment, authority does not simply
@@ -39,7 +39,7 @@ export default function ChapterThreePage() {
         Minerals and Global Demand
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         The region’s mineral wealth connects it directly to the global economy.
         Coltan is essential to modern electronics. Gold remains a universal
         store of value. Tin and tungsten are critical for industrial
@@ -47,7 +47,7 @@ export default function ChapterThreePage() {
         infrastructure of modern life.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Yet extraction often takes place through artisanal mining rather than
         large-scale industrial systems. Thousands of individuals work in
         conditions shaped by necessity rather than regulation. In this space,
@@ -60,7 +60,7 @@ export default function ChapterThreePage() {
         Fragmented Control and Armed Presence
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         In eastern Congo, control is rarely absolute. It is exercised through
         access: to a road, to a mine, to a border crossing. Armed groups do not
         always seek to govern entire territories. It is often sufficient to
@@ -68,7 +68,7 @@ export default function ChapterThreePage() {
         extract value.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Among these actors, M23 has played a significant role. Its presence is
         not limited to military confrontation. By positioning itself near key
         zones and routes, it becomes part of the broader economic structure.
@@ -76,7 +76,7 @@ export default function ChapterThreePage() {
         spreads, and the authority of the state becomes further diluted.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         This creates a cycle in which instability is not only a result of
         conflict but also a condition that allows the system to continue
         functioning. The absence of consistent control becomes an enabling
@@ -87,14 +87,14 @@ export default function ChapterThreePage() {
         Routes, Borders, and Regional Flow
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Once extracted, minerals do not remain in place. They move. This
         movement is structured through networks of traders, intermediaries, and
         transport routes that connect remote mining sites to regional hubs. At
         each stage, value is added, recorded, or sometimes obscured.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Rwanda occupies a critical position in this system as a regional
         gateway. It offers infrastructure, organization, and export capacity
         that stand in contrast to the fragmented environment across the
@@ -102,7 +102,7 @@ export default function ChapterThreePage() {
         about origin, traceability, and influence.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         The complexity lies in the overlap between structure and ambiguity.
         Minerals may pass through multiple hands before reaching formal export
         channels. By the time they enter global markets, their earlier journey
@@ -113,14 +113,14 @@ export default function ChapterThreePage() {
         A System, Not a Moment
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         What emerges is not a single conflict, but a system. Geography,
         mineral wealth, armed presence, and global demand interact in ways that
         reinforce one another. The land is not merely a backdrop—it is an
         active participant in the logic of the conflict.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         To understand eastern Congo is therefore to understand how local
         conditions connect to regional dynamics and global structures. The
         story is not only about who controls the land, but about what flows

@@ -18,7 +18,7 @@ export default function ChapterFourPage() {
         The War Economy
       </h1>
 
-      <p className="mt-8 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-8 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         There comes a point in some conflicts when violence stops being only a
         reaction to fear, territory, or politics. It becomes part of a system
         that sustains itself. Eastern Congo is one of those places. Over time,
@@ -27,7 +27,7 @@ export default function ChapterFourPage() {
         tied together through economic value.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         The most important thing to understand is that armed actors do not
         always need to rule in the formal sense. They do not need ministries,
         functioning bureaucracies, or complete territorial control. Often, it
@@ -41,7 +41,7 @@ export default function ChapterFourPage() {
         From insecurity to revenue
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         In a formal economy, production and trade are regulated through taxes,
         licenses, and institutions. In a war economy, many of these functions
         are informally reproduced by non-state actors. A miner extracts ore. A
@@ -51,7 +51,7 @@ export default function ChapterFourPage() {
         large volumes and long periods, they become a source of real income.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         This is why conflict in eastern Congo is not simply destructive. It is
         also productive in a narrow economic sense. It generates opportunities
         for some actors even as it destroys stability for others. That is one
@@ -64,7 +64,7 @@ export default function ChapterFourPage() {
         A chain of actors, not a single mastermind
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         One of the common misunderstandings about war economies is the idea
         that they are controlled by a single actor. In reality, the system is
         layered. Artisanal miners work for immediate survival. Local traders
@@ -75,7 +75,7 @@ export default function ChapterFourPage() {
         functioning economic network.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         This layered character is what makes the conflict economy adaptive. If
         one route becomes unusable, another is found. If one actor weakens,
         another may fill the space. The system is resilient precisely because
@@ -87,7 +87,7 @@ export default function ChapterFourPage() {
         The local cost of an international system
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         For communities living inside this reality, the war economy does not
         feel like an abstract model. It feels like daily uncertainty. Roads
         become risky. Markets shrink. Families move repeatedly. Work becomes
@@ -96,7 +96,7 @@ export default function ChapterFourPage() {
         insecurity where they are extracted.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         This creates one of the central contradictions of eastern Congo: the
         region is rich in material value, yet poor in secure development. The
         flow of wealth outward does not necessarily build order inward. In many
@@ -108,7 +108,7 @@ export default function ChapterFourPage() {
         Why the system persists
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         The war economy persists because it sits at the intersection of weak
         governance, strong demand, and fragmented control. None of these
         factors alone is enough to explain it. Together, they make conflict
@@ -117,7 +117,7 @@ export default function ChapterFourPage() {
         of the system will continue.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         To understand eastern Congo, one must therefore understand that war is
         not only fought there. It is financed there, organized there, and
         normalized there through patterns of movement and exchange that have

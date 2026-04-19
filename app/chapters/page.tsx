@@ -16,7 +16,7 @@ export default function ChaptersPage() {
             Explore all twelve chapters
           </h1>
 
-          <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+          <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
             Browse the full chapter sequence of the Rwanda–DRC site and move
             through the narrative one chapter at a time.
           </p>

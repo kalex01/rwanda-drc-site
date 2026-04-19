@@ -29,7 +29,7 @@ export default function StoryIndexPage() {
         Narrative chapter overview
       </h1>
 
-      <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         This section contains the chapter-based narrative of the Rwanda–DRC
         site. Use it to move through the story in sequence or jump directly to
         the full chapter index.

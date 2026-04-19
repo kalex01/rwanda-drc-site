@@ -18,7 +18,7 @@ export default function ChapterElevenPage() {
         Can the Cycle Be Broken?
       </h1>
 
-      <p className="mt-8 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-8 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         After tracing the historical roots, the war economy, the regional
         system, and the human cost, the natural question is whether the cycle
         can be broken at all. The answer is neither simple optimism nor
@@ -27,7 +27,7 @@ export default function ChapterElevenPage() {
         whose parts reinforce one another.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         This is why so many peace efforts struggle. They often address one
         layer while leaving the others largely intact. A military response may
         weaken one group without changing the economic conditions that allow new
@@ -41,7 +41,7 @@ export default function ChapterElevenPage() {
         The state question
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         At the center of any durable solution lies the Congolese state. No
         external actor can substitute for the steady presence of institutions
         able to secure roads, regulate trade, resolve disputes, and remain
@@ -52,7 +52,7 @@ export default function ChapterElevenPage() {
         community that experiences the state as reliably present.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         This makes the path forward slow by definition. It is easier to launch
         an operation than to build continuity. Yet without continuity, each
         short-term gain risks being swallowed again by the larger structure.
@@ -62,7 +62,7 @@ export default function ChapterElevenPage() {
         The regional security problem
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         A second condition is that regional security concerns cannot simply be
         wished away. Rwanda’s sense of vulnerability is part of the system,
         whether one agrees with every action taken in its name or not. Any
@@ -73,7 +73,7 @@ export default function ChapterElevenPage() {
         and potentially destabilizing channels.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Durable progress requires a framework in which sovereignty and security
         are not treated as mutually exclusive claims. That is difficult, but
         essential. One side cannot build stability by acting as though borders
@@ -85,7 +85,7 @@ export default function ChapterElevenPage() {
         Redirecting value
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         The third condition concerns economic flow. Minerals will remain
         important. The goal is not to make them irrelevant, but to redirect
         how their value is captured. That means improving formalization,
@@ -94,7 +94,7 @@ export default function ChapterElevenPage() {
         rather than to armed influence and informal extraction.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         None of this is easy because the current system is adaptive. But the
         fact that it adapts does not mean it cannot be reshaped. It means only
         that reforms must be persistent enough to become stronger than the old
@@ -105,7 +105,7 @@ export default function ChapterElevenPage() {
         The world’s responsibility
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         The wider world also has a role. Global demand is part of the structure
         of the conflict, even if it does not directly cause it. This creates a
         responsibility for companies, regulators, and states that benefit from
@@ -114,7 +114,7 @@ export default function ChapterElevenPage() {
         reduce the gap between value and accountability.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         In the end, breaking the cycle is less about finding a single decisive
         act than about aligning many smaller ones. Security reform, governance
         continuity, economic redirection, and regional diplomacy must begin to

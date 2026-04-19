@@ -1,57 +1,49 @@
 import type { Metadata } from "next"
-import { Geist } from "next/font/google"
 import "./globals.css"
 import SiteHeader from "@/app/components/SiteHeader"
 import SiteFooter from "@/app/components/SiteFooter"
 
-const geist = Geist({
-  subsets: ["latin"]
-})
-
 export const metadata: Metadata = {
-  title: {
-    default: "Rwanda–DRC Site",
-    template: "%s | Rwanda–DRC Site"
-  },
+  title: "Rwanda–DRC Nexus",
   description:
-    "Analysis of the Rwanda–DRC conflict, key actors, chapters, and reference materials.",
+    "A structured analysis of the Rwanda–DRC conflict, its history, key actors, regional dynamics, and humanitarian consequences.",
   openGraph: {
-    title: "Rwanda–DRC Site",
+    title: "Rwanda–DRC Nexus",
     description:
-      "Analysis of the Rwanda–DRC conflict, key actors, chapters, and reference materials.",
-    type: "website",
+      "A structured analysis of the Rwanda–DRC conflict, its history, key actors, regional dynamics, and humanitarian consequences.",
+    url: "https://rwanda-drc-nexus1.vercel.app/",
+    siteName: "Rwanda–DRC Nexus",
     locale: "en_CA",
-    siteName: "Rwanda–DRC Site",
-    url: "https://rwanda-drc-site.vercel.app",
+    type: "website",
     images: [
       {
-        url: "https://rwanda-drc-site.vercel.app/og-preview.png",
+        url: "/og-preview.png",
         width: 1200,
         height: 630,
-        alt: "Rwanda–DRC Conflict Overview"
-      }
-    ]
+        alt: "Rwanda–DRC Nexus preview image",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rwanda–DRC Site",
+    title: "Rwanda–DRC Nexus",
     description:
-      "Analysis of the Rwanda–DRC conflict, key actors, chapters, and reference materials.",
-    images: ["https://rwanda-drc-site.vercel.app/og-preview.png"]
-  }
+      "A structured analysis of the Rwanda–DRC conflict, its history, key actors, regional dynamics, and humanitarian consequences.",
+    images: ["/og-preview.png"],
+  },
 }
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
     <html lang="en">
-      <body className={`${geist.className} bg-slate-50 text-slate-900 antialiased`}>
-        <div className="min-h-screen">
+      <body className="min-h-screen bg-white text-neutral-900 antialiased">
+        <div className="flex min-h-screen flex-col">
           <SiteHeader />
-          {children}
+          <div className="flex-1">{children}</div>
           <SiteFooter />
         </div>
       </body>

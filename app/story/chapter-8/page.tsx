@@ -18,7 +18,7 @@ export default function ChapterEightPage() {
         The Global Layer
       </h1>
 
-      <p className="mt-8 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-8 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         If one looks only at the mine, the conflict appears local. A miner digs,
         a trader buys, a road is crossed, a checkpoint is negotiated. But that
         view becomes too narrow the moment the mineral leaves the ground. What
@@ -27,7 +27,7 @@ export default function ChapterEightPage() {
         the local conflict becomes global in meaning.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Coltan, gold, tin, and tungsten do not remain in the places where they
         are extracted. They move through traders, intermediaries, exporters,
         refiners, and manufacturers. By the time they reach end markets, they
@@ -41,7 +41,7 @@ export default function ChapterEightPage() {
         Where M23 enters the chain
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         M23 matters in this system not because it is a global trading company,
         but because it can shape conditions at the earliest and most vulnerable
         stage of the chain. Its influence over strategic zones, routes, or areas
@@ -51,7 +51,7 @@ export default function ChapterEightPage() {
         economic architecture of the conflict.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         This is one reason M23 attracts such scrutiny. Its role is not only
         military. It sits at the intersection of insecurity and economic flow.
         The more such a group becomes embedded in the movement of value, the
@@ -63,7 +63,7 @@ export default function ChapterEightPage() {
         Where Rwanda enters the debate
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Rwanda occupies a critical and contested place in this picture. It is a
         structured state with export capacity, processing infrastructure, and
         growing relevance in regional mineral trade. That alone would make it
@@ -73,7 +73,7 @@ export default function ChapterEightPage() {
         separate issues but interconnected ones.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Rwanda’s own position is that its conduct is driven by security
         concerns, and that its mineral exports operate through formal and
         legitimate structures. Critics argue that Rwanda’s role as a hub cannot
@@ -87,7 +87,7 @@ export default function ChapterEightPage() {
         The disappearance of origin
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         One of the structural problems in the global layer is that origin
         becomes less visible as minerals move. At the extraction stage, place
         matters. By the time processing and export occur, the chain becomes more
@@ -96,7 +96,7 @@ export default function ChapterEightPage() {
         their earlier journey difficult to reconstruct precisely.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         This is why global markets can absorb value more efficiently than they
         absorb accountability. The farther a resource moves from its site of
         extraction, the weaker the visible trace of conflict tends to become.
@@ -108,7 +108,7 @@ export default function ChapterEightPage() {
         A local conflict inside a global economy
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         The global layer does not erase local suffering. It depends on it being
         structurally distant. Consumers, companies, and states may benefit from
         the availability of these materials without directly experiencing the
@@ -117,7 +117,7 @@ export default function ChapterEightPage() {
         can be overlooked by those interacting only with the final product.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         To understand the global layer, then, is not merely to follow
         commodities. It is to understand how conflict can be folded into wider
         systems of trade, processing, and consumption, often without appearing

@@ -18,7 +18,7 @@ export default function ChapterFivePage() {
         Rwanda’s Strategic Mindset
       </h1>
 
-      <p className="mt-8 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-8 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         There are countries whose regional behavior is shaped mainly by size,
         and there are others shaped by memory. Rwanda belongs to the second
         category. Its posture toward eastern Congo cannot be understood without
@@ -26,7 +26,7 @@ export default function ChapterFivePage() {
         sense of danger, urgency, and statecraft.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         The genocide was not simply a national trauma. It was also a
         foundational event in how the modern Rwandan state understands
         vulnerability. From that experience emerged a governing outlook in
@@ -40,7 +40,7 @@ export default function ChapterFivePage() {
         Security beyond borders
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         One of the most important ideas in Rwanda’s strategic mindset is that
         threats do not stop at formal borders. Armed groups linked to the
         post-1994 regional crisis moved into eastern Congo and remained part of
@@ -49,7 +49,7 @@ export default function ChapterFivePage() {
         danger is seen as too costly.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         In practical terms, this means Rwanda tends to approach the region not
         passively, but actively. It watches developments closely, interprets
         shifts in eastern Congo through the lens of national security, and
@@ -64,7 +64,7 @@ export default function ChapterFivePage() {
         Discipline as a form of power
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Rwanda is not a large country, yet it often exerts influence beyond
         what its size might suggest. Part of that comes from military and
         administrative discipline. Part comes from the image it has built of
@@ -73,7 +73,7 @@ export default function ChapterFivePage() {
         coherence becomes a source of leverage.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         This internal discipline matters externally. It allows Rwanda to act
         quickly, frame its actions with confidence, and position itself as a
         state that knows what it wants. Whether others agree with those goals
@@ -86,7 +86,7 @@ export default function ChapterFivePage() {
         Security and economics do not remain separate
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         Rwanda’s strategic position is also tied to economics. Over time, it
         has developed mineral processing, trade, and export capacity that
         makes it an important regional node in broader supply chains. This does
@@ -95,7 +95,7 @@ export default function ChapterFivePage() {
         the region.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         This is one reason debates around Rwanda are rarely limited to
         security. They also touch trade, traceability, and regional economic
         advantage. Critics argue that economic and strategic interests may
@@ -108,7 +108,7 @@ export default function ChapterFivePage() {
         A state that acts from vigilance
       </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         In the end, Rwanda’s regional behavior is best understood not through
         a single label, but through a combination of historical memory,
         strategic vigilance, and structured ambition. It is a state that does
@@ -116,7 +116,7 @@ export default function ChapterFivePage() {
         by uncertainties that must be managed actively.
       </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-justify md:text-left md:text-lg md:leading-8">
+      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
         That mindset helps explain why Rwanda remains such a central actor in
         the Rwanda–DRC nexus. It is not merely reacting to events. It is
         interpreting them through a specific understanding of survival,
