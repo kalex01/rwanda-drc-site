@@ -85,18 +85,20 @@ export default function SiteFooter() {
           </div>
 
           <div className="mt-8 border-t border-slate-200 pt-6">
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <p className="text-sm leading-6 text-slate-600">
-                A narrative and reference-oriented site for reading the
-                conflict with greater structure, clarity, and context.
-              </p>
+            <div className="rounded-[1.5rem] border border-slate-800 bg-blue-950 px-5 py-5 sm:px-6">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <p className="text-sm leading-6 text-slate-200">
+                  A narrative and reference-oriented site for reading the
+                  conflict with greater structure, clarity, and context.
+                </p>
 
-              <Link
-                href="/"
-                className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-950"
-              >
-                Back to homepage
-              </Link>
+                <Link
+                  href="/"
+                  className="inline-flex items-center rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/15"
+                >
+                  Back to homepage
+                </Link>
+              </div>
             </div>
           </div>
         </div>
