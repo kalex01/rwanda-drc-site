@@ -1,266 +1,320 @@
-import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
-
-export const metadata: Metadata = {
-  title: "Actors",
-  description:
-    "Deep profiles of Rwanda, the Democratic Republic of Congo, and M23."
-}
-
-const actors = [
-  {
-    name: "Rwanda",
-    subtitle: "State actor",
-    intro:
-      "Rwanda is one of the most consequential actors in the conflict system around eastern DRC. Its role is shaped by security doctrine, regional influence, and the legacy of the 1994 genocide.",
-    sections: [
-      {
-        title: "Overview",
-        text:
-          "Rwanda presents the conflict primarily through a security lens. Its leadership has repeatedly argued that armed groups operating in eastern DRC, especially the FDLR, remain a direct concern for Rwanda’s national security."
-      },
-      {
-        title: "Strategic objectives",
-        text:
-          "Rwanda’s stated strategic objective is to prevent hostile armed groups from using eastern DRC as a rear base for threats against Rwanda. More broadly, Rwanda seeks a stable or at least manageable security environment along its western border."
-      },
-      {
-        title: "Documented public position",
-        text:
-          "Rwandan officials have publicly denied supporting M23 and have framed Rwanda’s posture as defensive. In this view, the central unresolved issue is the continued presence of the FDLR and the failure to neutralize it effectively."
-      },
-      {
-        title: "Role in the conflict",
-        text:
-          "International reporting has repeatedly described Rwanda as a major factor in the conflict’s evolution. UN and U.S. assessments have gone beyond general concern, with recent sanctions and reporting alleging direct RDF support to M23. Rwanda disputes those characterizations."
-      },
-      {
-        title: "International perspective",
-        text:
-          "Externally, Rwanda is viewed through two competing frames. One presents it as a state with legitimate security concerns tied to genocide-era armed networks. The other presents it as a regional actor whose conduct has helped deepen instability in eastern DRC."
-      },
-      {
-        title: "Diplomacy and pressure",
-        text:
-          "Rwanda has participated in U.S.-facilitated and regional diplomatic processes, including recent Washington engagement. At the same time, it has faced stronger international pressure, including sanctions and sharper public attribution by foreign governments."
-      },
-      {
-        title: "Key tension",
-        text:
-          "The central tension is between Rwanda’s stated security narrative and external findings that depict it as materially involved in sustaining M23’s military strength."
-      }
-    ]
-  },
-  {
-    name: "Democratic Republic of Congo",
-    subtitle: "State actor",
-    intro:
-      "The DRC is the principal territorial state affected by the conflict, with eastern provinces such as North Kivu and South Kivu bearing the brunt of repeated armed confrontation.",
-    sections: [
-      {
-        title: "Overview",
-        text:
-          "For the DRC, the conflict is at once a sovereignty crisis, a governance crisis, and a regional security crisis. It is also a struggle over control, legitimacy, and the state’s ability to protect populations in the east."
-      },
-      {
-        title: "Strategic objectives",
-        text:
-          "The DRC’s core objectives are to restore territorial control, reduce or defeat armed groups, protect sovereignty, and mobilize regional and international backing against what it sees as external interference."
-      },
-      {
-        title: "Documented public position",
-        text:
-          "Congolese officials have repeatedly accused Rwanda of backing M23. Publicly, Kinshasa has framed the issue less as a purely internal insurgency and more as a crisis involving cross-border support and regional destabilization."
-      },
-      {
-        title: "Role in the conflict",
-        text:
-          "The DRC is both the battlefield state and the diplomatic complainant. It has relied on military force, regional arrangements, and international advocacy, while also facing criticism over weak state reach, fragmented security structures, and unresolved governance problems in the east."
-      },
-      {
-        title: "International perspective",
-        text:
-          "Internationally, the DRC is often treated as a state confronting both internal armed-group fragmentation and external pressure. Sympathy for its sovereignty claims has often coexisted with concern about corruption, weak institutions, and uneven military performance."
-      },
-      {
-        title: "Diplomacy and pressure",
-        text:
-          "The DRC has actively sought sanctions, stronger attribution, and diplomatic support from partners including the United States, the United Nations, and African mediators. It has also engaged in high-level talks despite continued mistrust."
-      },
-      {
-        title: "Key tension",
-        text:
-          "The DRC argues that external backing for M23 is central. At the same time, long-standing internal weaknesses in state authority and local security governance remain part of why the east is so persistently unstable."
-      }
-    ]
-  },
-  {
-    name: "M23",
-    subtitle: "Armed group",
-    intro:
-      "M23 is the most internationally visible armed group in the current phase of the conflict and has been one of the main drivers of renewed military escalation in eastern DRC.",
-    sections: [
-      {
-        title: "Overview",
-        text:
-          "M23 emerged in 2012, declined after military setbacks, and later re-emerged as a powerful armed actor. Its resurgence has transformed the conflict from chronic instability into a sharper regional crisis."
-      },
-      {
-        title: "Strategic objectives",
-        text:
-          "M23 has presented itself as a movement seeking political redress, protection for communities, and implementation of prior commitments. In practice, its military operations have also focused on territory, mobility corridors, and leverage."
-      },
-      {
-        title: "Documented public position",
-        text:
-          "Publicly, M23 has framed itself as a political-military movement responding to exclusion, insecurity, and broken agreements. It presents its struggle as one tied to rights, protection, and representation."
-      },
-      {
-        title: "Role in the conflict",
-        text:
-          "M23 has been central to the latest escalation, conducting major offensives and controlling strategically important areas. Its battlefield effectiveness has been one of the defining features of the conflict’s recent phase."
-      },
-      {
-        title: "International perspective",
-        text:
-          "International organizations and many foreign governments treat M23 as a destabilizing armed group whose operations have driven displacement, insecurity, and broader regional confrontation. It is also widely discussed in connection with external support allegations."
-      },
-      {
-        title: "Diplomacy and pressure",
-        text:
-          "M23’s position affects not only battlefield dynamics but also the architecture of peace talks. Any durable settlement has to account for its territorial presence, military capability, and political demands, whether directly or indirectly."
-      },
-      {
-        title: "Key tension",
-        text:
-          "M23 presents itself as a political actor with grievances; much of the international community sees it primarily as an armed force intensifying instability through violence and coercive territorial expansion."
-      }
-    ]
-  }
-]
 
 const comparisonPoints = [
   {
     title: "Security frame",
     text:
-      "Rwanda emphasizes border security and the FDLR. The DRC emphasizes sovereignty and external interference. M23 emphasizes grievance, protection, and political exclusion."
+      "Rwanda emphasizes border security and the FDLR. The DRC emphasizes sovereignty and external interference. M23 emphasizes grievance, protection, and political exclusion.",
   },
   {
     title: "Territorial frame",
     text:
-      "The DRC sees the crisis through control of sovereign territory. M23’s relevance is linked to its operational reach on that territory. Rwanda’s role is assessed in relation to what happens across the border."
+      "The DRC sees the crisis through control of sovereign territory. M23’s relevance is linked to its operational reach on that territory. Rwanda’s role is assessed in relation to what happens across the border.",
   },
   {
     title: "Diplomatic frame",
     text:
-      "All three actors shape diplomacy differently: the DRC seeks backing, Rwanda seeks recognition of its security concerns, and M23 complicates or conditions any political settlement."
-  }
+      "All three actors shape diplomacy differently: the DRC seeks backing, Rwanda seeks recognition of its security concerns, and M23 complicates or conditions any political settlement.",
+  },
+]
+
+const actors = [
+  {
+    name: "Rwanda",
+    slug: "rwanda",
+    subtitle: "State actor",
+    image: "/images/paul-kagame.jpg",
+    imagePosition: "object-[center_20%]",
+    intro:
+      "Rwanda is one of the most consequential actors in the conflict system around eastern DRC. Its role is shaped by security doctrine, regional influence, and the legacy of the 1994 genocide.",
+    summary:
+      "Rwanda frames the conflict primarily through border security, the FDLR question, and wider regional stability concerns.",
+    highlights: [
+      "Security doctrine and border concerns",
+      "Repeated denials of support for M23",
+      "Central to diplomacy and external pressure",
+    ],
+  },
+  {
+    name: "Democratic Republic of Congo",
+    slug: "drc",
+    subtitle: "State actor",
+    image: "/images/felix-tshisekedi2.jpg",
+    imagePosition: "object-[78%_18%]",
+    intro:
+      "The DRC is the principal territorial state affected by the conflict, with eastern provinces such as North Kivu and South Kivu bearing the brunt of repeated armed confrontation.",
+    summary:
+      "The DRC sees the crisis as a sovereignty, governance, and territorial-control struggle shaped by both internal armed groups and external interference.",
+    highlights: [
+      "Sovereignty and territorial integrity",
+      "Strong push for international attribution",
+      "Military response alongside diplomacy",
+    ],
+  },
+  {
+    name: "M23",
+    slug: "m23",
+    subtitle: "Armed group",
+    image: "/images/timeline-m23-goma.jpg",
+    imagePosition: "object-center",
+    intro:
+      "M23 is the most internationally visible armed group in the current phase of the conflict and has been one of the main drivers of renewed military escalation in eastern DRC.",
+    summary:
+      "M23’s resurgence transformed chronic instability into a sharper regional crisis with major military, diplomatic, and territorial implications.",
+    highlights: [
+      "Central actor in recent escalation",
+      "Territorial control and military leverage",
+      "Major obstacle in peace efforts",
+    ],
+  },
+]
+
+const overviewNotes = [
+  {
+    title: "Why these actors",
+    text:
+      "These three pages bring together the main state and armed actors that most consistently shape the conflict’s direction, meaning, and diplomatic difficulty.",
+  },
+  {
+    title: "How to read them",
+    text:
+      "The profiles work best when read comparatively. Each actor frames the conflict differently, and those differences help explain why the crisis persists.",
+  },
+  {
+    title: "What they reveal",
+    text:
+      "Taken together, the profiles show how security, sovereignty, territory, and leverage interact across state policy and armed mobilization.",
+  },
 ]
 
 export default function ActorsPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50/30">
-      <section className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8 md:py-14">
-        <div className="rounded-[2rem] border border-slate-200 bg-white/90 px-5 py-8 shadow-sm md:px-10 md:py-12">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-            Actors
-          </p>
+    <main className="min-h-screen bg-slate-50 text-slate-900">
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto grid max-w-4xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 md:py-14">
+          <div className="flex flex-col justify-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">
+              Actors
+            </p>
 
-          <h1 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">
-            Deep profiles of the main actors
-          </h1>
+            <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">
+              Compare the main actors shaping the conflict
+            </h1>
 
-          <p className="mt-5 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
-            These profiles are organized to help readers compare the principal
-            actors through a shared analytical structure: objectives, public
-            positions, role in the conflict, international perspective, and key
-            tensions.
-          </p>
+            <p className="mt-6 max-w-2xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              These profiles help readers compare the principal actors through a
+              shared analytical structure: objectives, public positions, role in
+              the conflict, international perspective, and key tensions.
+            </p>
 
-          <div className="mt-7 flex flex-wrap gap-3">
-            <Link
-              href="/context"
-              className="inline-flex items-center rounded-xl bg-slate-950 px-5 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5"
-            >
-              Open context page
-            </Link>
-            <Link
-              href="/chapters"
-              className="inline-flex items-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-900 transition hover:bg-slate-50"
-            >
-              Return to chapters
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href="/context"
+                className="inline-flex items-center rounded-full border border-slate-900 bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
+              >
+                Open context page
+              </Link>
+              <Link
+                href="/chapters"
+                className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-950"
+              >
+                Return to chapters
+              </Link>
+              <Link
+                href="/appendix"
+                className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-950"
+              >
+                Open appendix
+              </Link>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+            <div className="relative aspect-[4/3] w-full bg-slate-100">
+              <Image
+                src="/images/diplomacy-meeting.jpg"
+                alt="Diplomatic meeting representing negotiation, pressure, and competing actor positions"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+            <div className="border-t border-slate-200 p-5 sm:p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+                Comparative lens
+              </p>
+              <p className="mt-3 text-sm leading-6 text-slate-700 sm:text-base">
+                The conflict becomes clearer when state actors and armed actors
+                are read side by side rather than in isolation. Comparison helps
+                explain why the same event can produce sharply different
+                interpretations.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
+      <section className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 md:py-10">
+        <div className="grid gap-4 md:grid-cols-3">
+          {overviewNotes.map((item) => (
+            <article
+              key={item.title}
+              className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+                {item.title}
+              </p>
+              <p className="mt-3 text-sm leading-6 text-slate-700 sm:text-base">
+                {item.text}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="mx-auto max-w-4xl px-4 py-2 sm:px-6 lg:px-8 md:py-4">
-        <div className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-            Comparative lens
-          </p>
+        <div className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm sm:p-6 lg:p-8">
+          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Comparative lens
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+                How to read the actors together
+              </h2>
+            </div>
 
-          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
-            How to read the actors together
-          </h2>
+            <p className="max-w-xl text-sm leading-6 text-slate-600 md:text-base">
+              These are not isolated profiles. They are meant to clarify how the
+              same conflict is framed differently by different participants.
+            </p>
+          </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
             {comparisonPoints.map((item) => (
-              <div
+              <article
                 key={item.title}
-                className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 md:px-6 md:py-6"
+                className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5 sm:p-6"
               >
-                <h3 className="text-lg font-semibold text-slate-950">
+                <h3 className="text-lg font-semibold tracking-tight text-slate-950">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-base leading-7 text-slate-600">
+                <p className="mt-3 text-base leading-7 text-slate-700">
                   {item.text}
                 </p>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-4xl px-4 py-2 pb-10 sm:px-6 lg:px-8 md:py-4 md:pb-14">
-        <div className="space-y-5 md:space-y-8">
+        <div className="grid gap-5 md:grid-cols-3">
           {actors.map((actor) => (
-            <div
-              key={actor.name}
-              className="rounded-[2rem] border border-slate-200 bg-white px-5 py-8 shadow-sm md:px-10 md:py-12"
+            <article
+              key={actor.slug}
+              className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm"
             >
-              <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-                    {actor.subtitle}
+              <Link href={`/actors/${actor.slug}`} className="block">
+                <div className="relative aspect-[4/3] w-full bg-slate-200">
+                  <Image
+                    src={actor.image}
+                    alt={actor.name}
+                    fill
+                    className={`object-cover ${actor.imagePosition}`}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/55 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 px-5 py-5 text-white">
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-200">
+                      {actor.subtitle}
+                    </p>
+                    <h2 className="mt-2 text-2xl font-semibold tracking-tight">
+                      {actor.name}
+                    </h2>
+                  </div>
+                </div>
+              </Link>
+
+              <div className="p-5 sm:p-6">
+                <p className="text-base leading-7 text-slate-700">
+                  {actor.intro}
+                </p>
+
+                <div className="mt-5 rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4 sm:p-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+                    At a glance
                   </p>
-                  <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
-                    {actor.name}
-                  </h2>
+                  <p className="mt-2 text-sm leading-6 text-slate-700">
+                    {actor.summary}
+                  </p>
+                </div>
+
+                <ul className="mt-5 space-y-3">
+                  {actor.highlights.map((item) => (
+                    <li
+                      key={item}
+                      className="rounded-[1rem] border border-slate-200 bg-white px-4 py-3 text-sm leading-6 text-slate-700"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-6">
+                  <Link
+                    href={`/actors/${actor.slug}`}
+                    className="inline-flex items-center rounded-full border border-slate-900 bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+                  >
+                    Open full profile
+                  </Link>
                 </div>
               </div>
-
-              <p className="mt-5 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">
-                {actor.intro}
-              </p>
-
-              <div className="mt-6 grid gap-4 md:grid-cols-2">
-                {actor.sections.map((section) => (
-                  <div
-                    key={section.title}
-                    className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 md:px-6 md:py-6"
-                  >
-                    <h3 className="text-lg font-semibold text-slate-950">
-                      {section.title}
-                    </h3>
-                    <p className="mt-3 text-base leading-7 text-slate-600">
-                      {section.text}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            </article>
           ))}
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8 md:py-12">
+          <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+              Reading support
+            </p>
+
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+              Move between actors and the wider system
+            </h2>
+
+            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              The actor pages work best alongside the story, context, and
+              appendix sections. Readers can compare positions here, then return
+              to chronology, geography, and chapter-based explanation.
+            </p>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                href="/story"
+                className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-950"
+              >
+                Open story
+              </Link>
+              <Link
+                href="/context"
+                className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-950"
+              >
+                View context
+              </Link>
+              <Link
+                href="/appendix"
+                className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-950"
+              >
+                Open appendix
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -5,138 +5,256 @@ export const metadata: Metadata = {
   title:
     "Congo: A Giant That Struggles to Hold Itself Together | Chapter 6 | Rwanda–DRC Site",
   description:
-    "Chapter 6 examines the Congolese state’s uneven reach, weak territorial control, mineral wealth, and the challenge of building durable authority in the east."
+    "Chapter 6 examines the Congolese state’s uneven reach, weak territorial control, mineral wealth, and the challenge of building durable authority in the east.",
 }
+
+const chapterNotes = [
+  {
+    title: "State challenge",
+    text:
+      "This chapter examines the gap between Congo’s scale and potential on one hand, and its uneven ability to project durable authority across its territory on the other.",
+  },
+  {
+    title: "Core problem",
+    text:
+      "The issue is not absolute absence, but inconsistency: authority may appear in one place and weaken just beyond it, allowing insecurity and informal control to persist.",
+  },
+  {
+    title: "Why it matters",
+    text:
+      "The conflict endures not only because armed groups exist, but because the state still struggles to convert territorial sovereignty into continuous lived presence.",
+  },
+]
 
 export default function ChapterSixPage() {
   return (
-    <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 md:py-14">
-      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
-        Chapter 6
-      </p>
+    <main className="min-h-screen bg-slate-50 text-slate-900">
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8 md:py-14">
+          <div className="grid gap-6 lg:grid-cols-[1.08fr_0.92fr]">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">
+                Chapter 6
+              </p>
 
-      <h1 className="mt-4 text-3xl font-bold leading-tight text-slate-900 md:text-5xl">
-        Congo: A Giant That Struggles to Hold Itself Together
-      </h1>
+              <h1 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">
+                Congo: A Giant That Struggles to Hold Itself Together
+              </h1>
 
-      <p className="mt-8 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
-        The Democratic Republic of the Congo is a country of immense scale and
-        extraordinary possibility. Its size, natural wealth, and human
-        potential could, under different conditions, make it one of the most
-        powerful states on the continent. And yet much of its modern history
-        has been marked by a painful contrast between what it possesses and
-        what it is able to control.
-      </p>
+              <p className="mt-6 max-w-2xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                The Democratic Republic of the Congo is a country of enormous
+                scale, resources, and human potential. This chapter examines why
+                that potential has so often been undercut by uneven state reach,
+                fragile territorial control, and the persistent difficulty of
+                turning formal sovereignty into durable authority on the ground.
+              </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
-        This gap is especially visible in the east. There, the state is not
-        absent in a total sense, but its presence is uneven. Authority may be
-        visible in one town and weak on the road beyond it. Institutions may
-        exist formally while struggling to shape reality consistently on the
-        ground. In such conditions, control becomes unstable, and instability
-        becomes part of everyday life.
-      </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link
+                  href="/story/chapter-5"
+                  className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-950"
+                >
+                  Previous chapter
+                </Link>
+                <Link
+                  href="/story/chapter-7"
+                  className="inline-flex items-center rounded-full border border-slate-900 bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
+                >
+                  Next chapter
+                </Link>
+              </div>
+            </div>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
-        A tragedy of reach and presence
-      </h2>
+            <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+                Chapter lens
+              </p>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
-        One of the enduring tragedies of Congo is that it has often struggled
-        to fully reach itself. Kinshasa can project sovereignty on the map, but
-        governing a vast territory requires roads, institutions, security, and
-        continuity. Where these are inconsistent, the state’s authority becomes
-        thinner. That thinning creates spaces in which others—armed groups,
-        informal networks, and external actors—can shape reality more than the
-        state itself.
-      </p>
+              <p className="mt-4 text-sm leading-6 text-slate-700 sm:text-base">
+                Congo’s central difficulty is not a lack of promise. It is the
+                repeated gap between what the state formally possesses and what
+                it can reliably secure, regulate, and sustain across a vast and
+                demanding territory.
+              </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
-        This is not only a governance problem. It is a national wound. Because
-        every zone left partially unsecured or weakly regulated becomes a place
-        where sovereignty is diluted. For the population, this is experienced
-        not in constitutional language, but in daily terms: whether roads are
-        safe, markets function, schools stay open, and local authority can be
-        trusted to remain present.
-      </p>
+              <div className="mt-6 rounded-[1.5rem] border border-slate-200 bg-white p-4 sm:p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                  Key idea
+                </p>
+                <p className="mt-3 text-sm leading-6 text-slate-600 sm:text-base">
+                  Where state presence becomes thin, sovereignty is not removed
+                  from the map, but it becomes easier for armed groups, informal
+                  networks, and external actors to shape reality more directly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
-        Wealth without sufficient capture
-      </h2>
+      <section className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 md:py-10">
+        <div className="grid gap-4 md:grid-cols-3">
+          {chapterNotes.map((item) => (
+            <article
+              key={item.title}
+              className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+                {item.title}
+              </p>
+              <p className="mt-3 text-sm leading-6 text-slate-700 sm:text-base">
+                {item.text}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
-        The country’s mineral wealth should be a foundation for long-term
-        national strength. Instead, it has too often become part of a system
-        in which value escapes more easily than it is captured. Resources are
-        extracted, traded, transported, and absorbed into wider networks while
-        the state struggles to retain enough of that value to transform local
-        conditions sustainably.
-      </p>
+      <article className="mx-auto max-w-3xl px-4 pb-12 sm:px-6 lg:px-8 md:pb-16">
+        <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 lg:p-10">
+          <p className="text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+            The Democratic Republic of the Congo is a country of immense scale
+            and extraordinary possibility. Its size, natural wealth, and human
+            potential could, under different conditions, make it one of the
+            most powerful states on the continent. And yet much of its modern
+            history has been marked by a painful contrast between what it
+            possesses and what it is able to control.
+          </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
-        This is one of the most painful dimensions of the Congolese story: a
-        land of such abundance repeatedly witnessing the outward movement of
-        wealth while insecurity remains inwardly entrenched. It is not simply
-        a matter of corruption or technical weakness, though both matter. It
-        is a structural mismatch between economic potential and institutional
-        control.
-      </p>
+          <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+            This gap is especially visible in the east. There, the state is not
+            absent in a total sense, but its presence is uneven. Authority may
+            be visible in one town and weak on the road beyond it. Institutions
+            may exist formally while struggling to shape reality consistently on
+            the ground. In such conditions, control becomes unstable, and
+            instability becomes part of everyday life.
+          </p>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
-        Armed persistence as a mirror of state limitation
-      </h2>
+          <section className="mt-12">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+              A tragedy of reach and presence
+            </h2>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
-        The persistence of armed actors in eastern Congo is not only a story
-        about those groups themselves. It is also a reflection of the spaces in
-        which the state has not yet fully consolidated itself. When groups like
-        M23 can operate, reposition, or influence strategic zones, they reveal
-        something deeper about the landscape in which they move. They reveal
-        that authority remains contested.
-      </p>
+            <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              One of the enduring tragedies of Congo is that it has often
+              struggled to fully reach itself. Kinshasa can project sovereignty
+              on the map, but governing a vast territory requires roads,
+              institutions, security, and continuity. Where these are
+              inconsistent, the state’s authority becomes thinner. That thinning
+              creates spaces in which others — armed groups, informal networks,
+              and external actors — can shape reality more than the state
+              itself.
+            </p>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
-        This is why Congo’s challenge is not merely to defeat one armed group
-        or secure one district. It is to create continuity of state presence in
-        places where people have long learned to live with uncertainty. That is
-        a much larger task than military response alone. It involves trust,
-        infrastructure, administration, and time.
-      </p>
+            <div className="mt-6 rounded-[1.75rem] border border-slate-200 bg-slate-50 p-5 sm:p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Structural point
+              </p>
+              <p className="mt-3 text-lg font-medium leading-8 text-slate-900 md:text-xl">
+                Congo’s problem is not simply one of geography. It is the
+                repeated thinning of authority across distance, where formal
+                sovereignty does not always become reliable daily presence.
+              </p>
+            </div>
 
-      <h2 className="mt-12 text-2xl font-semibold text-slate-900 md:text-3xl">
-        A wake-up call, not a verdict
-      </h2>
+            <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              This is not only a governance problem. It is a national wound.
+              Because every zone left partially unsecured or weakly regulated
+              becomes a place where sovereignty is diluted. For the population,
+              this is experienced not in constitutional language, but in daily
+              terms: whether roads are safe, markets function, schools stay
+              open, and local authority can be trusted to remain present.
+            </p>
+          </section>
 
-      <p className="mt-4 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
-        And yet this story should not be read as a final judgment on Congo. It
-        should be read as a wake-up call. The country’s limitations are real,
-        but so is its potential. Recognizing the scale of the problem is not
-        surrender. It is the first step toward building something more durable.
-      </p>
+          <section className="mt-12">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+              Wealth without sufficient capture
+            </h2>
 
-      <p className="mt-6 text-base leading-7 text-slate-700 text-left md:text-lg md:leading-8">
-        Congo does not lack resources. It does not lack human resilience. What
-        it needs is a stronger alignment between territory, authority, and
-        benefit. Until that alignment becomes more real, the gap between the
-        country’s promise and its lived reality will remain one of the central
-        tragedies of the region.
-      </p>
+            <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              The country’s mineral wealth should be a foundation for long-term
+              national strength. Instead, it has too often become part of a
+              system in which value escapes more easily than it is captured.
+              Resources are extracted, traded, transported, and absorbed into
+              wider networks while the state struggles to retain enough of that
+              value to transform local conditions sustainably.
+            </p>
 
-      <div className="mt-12 flex flex-col gap-3 border-t border-slate-200 pt-8 sm:flex-row sm:items-center sm:justify-between">
-        <Link
-          href="/story/chapter-5"
-          className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
-        >
-          Previous Chapter
-        </Link>
+            <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              This is one of the most painful dimensions of the Congolese
+              story: a land of such abundance repeatedly witnessing the outward
+              movement of wealth while insecurity remains inwardly entrenched.
+              It is not simply a matter of corruption or technical weakness,
+              though both matter. It is a structural mismatch between economic
+              potential and institutional control.
+            </p>
+          </section>
 
-        <Link
-          href="/story/chapter-7"
-          className="inline-flex items-center justify-center rounded-xl bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-800"
-        >
-          Next Chapter
-        </Link>
-      </div>
-    </article>
+          <section className="mt-12">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+              Armed persistence as a mirror of state limitation
+            </h2>
+
+            <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              The persistence of armed actors in eastern Congo is not only a
+              story about those groups themselves. It is also a reflection of
+              the spaces in which the state has not yet fully consolidated
+              itself. When groups like M23 can operate, reposition, or
+              influence strategic zones, they reveal something deeper about the
+              landscape in which they move. They reveal that authority remains
+              contested.
+            </p>
+
+            <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              This is why Congo’s challenge is not merely to defeat one armed
+              group or secure one district. It is to create continuity of state
+              presence in places where people have long learned to live with
+              uncertainty. That is a much larger task than military response
+              alone. It involves trust, infrastructure, administration, and
+              time.
+            </p>
+          </section>
+
+          <section className="mt-12">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+              A wake-up call, not a verdict
+            </h2>
+
+            <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              And yet this story should not be read as a final judgment on
+              Congo. It should be read as a wake-up call. The country’s
+              limitations are real, but so is its potential. Recognizing the
+              scale of the problem is not surrender. It is the first step
+              toward building something more durable.
+            </p>
+
+            <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              Congo does not lack resources. It does not lack human resilience.
+              What it needs is a stronger alignment between territory,
+              authority, and benefit. Until that alignment becomes more real,
+              the gap between the country’s promise and its lived reality will
+              remain one of the central tragedies of the region.
+            </p>
+          </section>
+        </div>
+
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <Link
+            href="/story/chapter-5"
+            className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-950"
+          >
+            Previous chapter
+          </Link>
+
+          <Link
+            href="/story/chapter-7"
+            className="inline-flex items-center justify-center rounded-full border border-slate-900 bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+          >
+            Next chapter
+          </Link>
+        </div>
+      </article>
+    </main>
   )
 }
