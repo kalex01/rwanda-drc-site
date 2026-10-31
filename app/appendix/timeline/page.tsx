@@ -107,7 +107,7 @@ export default function TimelinePage() {
                     <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
                       Moment {index + 1}
                     </p>
-                    <p className="mt-3 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+                    <p className={`mt-3 break-words font-semibold tracking-tight text-slate-950 ${event.year.length > 9 ? "text-lg md:text-xl" : "text-2xl md:text-3xl"}`}>
                       {event.year}
                     </p>
                   </div>
