@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
+import ChronologySources from "@/app/components/ChronologySources"
+import { chronologyEvents, chronologyScope } from "@/app/data/chronology"
 
 export const metadata: Metadata = {
   title: "Context",
@@ -52,7 +54,7 @@ const referencePoints = [
 const contextGuides = [
   {
     title: "Timeline markers",
-    value: "7",
+    value: String(chronologyEvents.length),
     text:
       "A concise chronology from the 1994 rupture through recent diplomacy and sanctions.",
   },
@@ -66,7 +68,7 @@ const contextGuides = [
     title: "Diplomatic tracks",
     value: "3",
     text:
-      "U.S., regional, and UN engagement remain important to de-escalation efforts.",
+      "Washington, Doha and African regional mediation operate alongside UN engagement.",
   },
 ]
 
@@ -74,51 +76,6 @@ const whyItMatters = [
   "Eastern DRC borders Rwanda, making frontier insecurity and spillover central to the conflict.",
   "The crisis combines local armed-group dynamics with interstate accusations, diplomacy, and mineral politics.",
   "Readers often need geographic orientation before they can make sense of the timeline, actors, and recent diplomatic pressure.",
-]
-
-const timeline = [
-  {
-    years: "1994",
-    title: "Genocide against the Tutsi in Rwanda",
-    text:
-      "The genocide became a foundational turning point for the regional crisis. Its aftermath reshaped security dynamics inside Rwanda and across the border in eastern Zaire, later the DRC.",
-  },
-  {
-    years: "1996–1997",
-    title: "First Congo War",
-    text:
-      "Regional instability spilled into eastern Zaire. Rwanda supported a rebellion led by Laurent-Désiré Kabila, and Mobutu was overthrown.",
-  },
-  {
-    years: "1998–2003",
-    title: "Second Congo War",
-    text:
-      "The conflict widened into a major regional war involving multiple states and armed groups. Even after the formal war period ended, eastern DRC remained volatile.",
-  },
-  {
-    years: "2012–2013",
-    title: "Rise of M23 and the fall of Goma",
-    text:
-      "M23 emerged as a major armed actor and briefly captured Goma in 2012 before later being militarily weakened in 2013.",
-  },
-  {
-    years: "2021–2024",
-    title: "Renewed M23 insurgency",
-    text:
-      "M23 re-emerged and intensified operations in eastern DRC, reviving regional accusations, military confrontation, and diplomatic pressure.",
-  },
-  {
-    years: "2025",
-    title: "Washington peace agreement and renewed pressure",
-    text:
-      "In June 2025, Rwanda and the DRC signed a U.S.-brokered peace agreement in Washington, marking a new phase of high-level diplomacy around ceasefire commitments, sovereignty, and regional stabilization.",
-  },
-  {
-    years: "2026",
-    title: "Sanctions and de-escalation efforts",
-    text:
-      "In March 2026, the United States sanctioned the Rwanda Defence Force and four senior officers, and later that month Rwanda and the DRC agreed in Washington on steps intended to reduce tensions.",
-  },
 ]
 
 const timelineAnchors = [
@@ -145,7 +102,7 @@ const timelineAnchors = [
     years: "2025–2026",
     title: "Washington diplomacy",
     text:
-      "Recent diplomacy shifted toward ceasefire pressure, sanctions-related leverage, and high-level mediation.",
+      "Washington and Doha negotiations continued alongside sanctions and efforts to verify commitments.",
     image: "/images/timeline-washington-2025.jpg",
     alt: "Image connected to Washington diplomacy between Rwanda and the DRC",
   },
@@ -211,7 +168,7 @@ const accountability = [
   {
     title: "Recent U.S. sanctions",
     text:
-      "In February 2025, the United States sanctioned James Kabarebe. In March 2026, the U.S. Treasury sanctioned the Rwanda Defence Force and four senior officers, citing support for M23 and destabilization in eastern DRC.",
+      "U.S. sanctions expanded from James Kabarebe in February 2025 to the RDF and four officers in March 2026, Joseph Kabila in April, M23 and FDLR commanders and a minerals network in June, and Rwanda’s defence ministry and Zigama in October. The dated timeline above distinguishes the actions from their stated grounds and responses.",
   },
   {
     title: "UN reporting and evidentiary context",
@@ -224,17 +181,17 @@ const diplomacy = [
   {
     title: "United States mediation",
     text:
-      "Washington has hosted high-level engagement between Rwanda and the DRC. A U.S.-brokered peace agreement was signed in June 2025, marking a major diplomatic milestone.",
+      "Washington has hosted high-level engagement between Rwanda and the DRC. The governments signed a peace agreement on 27 June 2025, followed by presidential endorsement of the Washington framework on 4 December. Subsequent oversight meetings addressed implementation.",
   },
   {
     title: "March 2026 Washington meeting",
     text:
-      "In March 2026, Rwanda and the DRC agreed in Washington on steps aimed at de-escalating tensions after a period of intensified pressure and sanctions.",
+      "The 17–18 March 2026 talks produced announced commitments on disengagement, action against the FDLR and civilian protection. The announcement did not demonstrate that these measures had been fulfilled.",
   },
   {
-    title: "Regional and UN diplomacy",
+    title: "Doha, regional and UN diplomacy",
     text:
-      "UN engagement and African regional mediation have continued alongside bilateral talks and broader international efforts to lower the risk of regional escalation.",
+      "The separate Doha track brings together the DRC and AFC/M23. Its July and November 2025 agreements were followed by verification arrangements and a reported field mission in August 2026. African mediation and UN support continue alongside these negotiations.",
   },
 ]
 
@@ -524,7 +481,7 @@ export default function ContextPage() {
             </div>
 
             <p className="max-w-xl text-sm leading-6 text-slate-600 md:text-base">
-              This compressed timeline is designed as an orientation tool before
+              This shared timeline is designed as an orientation tool before
               readers move into longer analysis.
             </p>
           </div>
@@ -566,10 +523,12 @@ export default function ContextPage() {
             ))}
           </div>
 
+          <p className="mt-4 text-sm leading-6 text-slate-500">{chronologyScope}</p>
+
           <div className="mt-8 space-y-4">
-            {timeline.map((item, index) => (
+            {chronologyEvents.map((item) => (
               <div
-                key={`${item.years}-${index}`}
+                key={item.id}
                 className="relative rounded-[1.5rem] border border-slate-200 bg-slate-50 px-5 py-5 md:px-6"
               >
                 <div className="absolute left-0 top-0 h-full w-1 rounded-l-[1.5rem] bg-slate-900/80" />
@@ -577,7 +536,7 @@ export default function ContextPage() {
                 <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
                   <div className="md:max-w-[180px]">
                     <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
-                      {item.years}
+                      {item.year}
                     </p>
                   </div>
 
@@ -586,8 +545,9 @@ export default function ContextPage() {
                       {item.title}
                     </h3>
                     <p className="mt-3 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                      {item.text}
+                      {item.summary}
                     </p>
+                    <ChronologySources sources={item.sources} />
                   </div>
                 </div>
               </div>

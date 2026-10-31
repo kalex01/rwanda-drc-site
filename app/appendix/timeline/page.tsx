@@ -1,71 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-
-type TimelineEvent = {
-  year: string
-  title: string
-  summary: string
-  significance: string
-  image?: string
-  alt?: string
-}
-
-const timelineEvents: TimelineEvent[] = [
-  {
-    year: "1994",
-    title: "The genocide against the Tutsi reshapes Rwanda’s security outlook",
-    summary:
-      "The genocide against the Tutsi remains the foundational trauma behind modern Rwanda’s security doctrine. The collapse of order, the role of extremist networks, and the flight of perpetrators into what was then Zaire deeply shaped how Kigali came to view threats emerging from across the border.",
-    significance:
-      "Any serious reading of Rwanda’s later actions in eastern Congo begins here: security fears, regional intervention, and political narratives were all heavily influenced by the aftermath of 1994.",
-    image: "/images/timeline-1994.jpg",
-    alt: "Memorial-related image representing the 1994 genocide against the Tutsi in Rwanda",
-  },
-  {
-    year: "1996–1998",
-    title: "Regional war spills across borders",
-    summary:
-      "As armed elements reorganized in eastern Congo and state authority weakened, Rwanda became deeply involved in cross-border military dynamics. The wider region was pulled into overlapping wars involving multiple states, rebel movements, and local power brokers.",
-    significance:
-      "This period turned eastern Congo into a regional security arena, not just a domestic conflict zone. It also laid the groundwork for the long-term militarization of politics in the east.",
-  },
-  {
-    year: "2000s",
-    title: "Armed fragmentation becomes a lasting feature of the east",
-    summary:
-      "Even after formal peace processes and national transitions, eastern Congo continued to experience militia formation, armed competition, local grievances, and weak state control. Security did not stabilize evenly across the region.",
-    significance:
-      "The conflict became harder to explain through a single storyline. Local disputes, regional interests, mineral routes, state weakness, and civilian insecurity became tightly intertwined.",
-  },
-  {
-    year: "2012–2013",
-    title: "M23 emerges, then is pushed back",
-    summary:
-      "The M23 rebellion drew major regional and international attention. Its rise highlighted the fragility of state control in eastern Congo, while its later military setback did not eliminate the deeper conditions that had enabled its emergence.",
-    significance:
-      "This moment made clear that military reversals alone were not enough to produce durable stability. The political and regional dimensions remained unresolved.",
-  },
-  {
-    year: "2022–2024",
-    title: "M23 returns and the crisis intensifies around North Kivu",
-    summary:
-      "M23 re-emerged as a central force in the conflict, capturing territory and sharply raising regional tensions. Civilians again faced displacement, insecurity, and an atmosphere of escalating confrontation as diplomatic efforts struggled to keep pace.",
-    significance:
-      "The renewed M23 advance forced the region back into a high-stakes phase, making the Rwanda–DRC relationship a central part of the crisis once again.",
-    image: "/images/timeline-m23-goma.jpg",
-    alt: "Conflict-related image associated with the M23 crisis near Goma",
-  },
-  {
-    year: "2025",
-    title: "Diplomatic pressure grows as external mediation intensifies",
-    summary:
-      "As the security situation remained serious, diplomatic engagement increased. Regional actors, international partners, and external mediators sought pathways to reduce escalation and revive negotiation channels.",
-    significance:
-      "This phase underscored a recurring lesson of the conflict: armed developments and political settlements move together, and diplomacy remains essential even when trust is low.",
-    image: "/images/timeline-washington-2025.jpg",
-    alt: "Diplomatic meeting image linked to 2025 mediation efforts",
-  },
-]
+import ChronologySources from "@/app/components/ChronologySources"
+import { chronologyEvents, chronologyScope, chronologyEditorialNote } from "@/app/data/chronology"
 
 export default function TimelinePage() {
   return (
@@ -88,6 +24,8 @@ export default function TimelinePage() {
               insecurity in eastern Congo.
             </p>
 
+            <p className="mt-4 text-sm leading-6 text-slate-500">{chronologyScope}</p>
+
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/appendix"
@@ -108,7 +46,7 @@ export default function TimelinePage() {
             <div className="relative aspect-[4/3] w-full">
               <Image
                 src="/images/timeline-washington-2025.jpg"
-                alt="Diplomatic meeting illustrating the most recent phase of mediation and regional diplomacy"
+                alt="Diplomatic meeting associated with the 2025 Washington diplomatic process"
                 fill
                 className="object-cover"
                 priority
@@ -147,9 +85,7 @@ export default function TimelinePage() {
               Editorial focus
             </p>
             <p className="mt-3 text-sm leading-6 text-slate-700 sm:text-base">
-              The emphasis here is explanatory: why the conflict keeps
-              returning, why the east remains unstable, and why military and
-              diplomatic phases are so tightly connected.
+              {chronologyEditorialNote}
             </p>
           </div>
         </div>
@@ -157,12 +93,13 @@ export default function TimelinePage() {
 
       <section className="mx-auto max-w-4xl px-4 pb-12 sm:px-6 lg:px-8 md:pb-16">
         <div className="space-y-6 md:space-y-8">
-          {timelineEvents.map((event, index) => {
+          {chronologyEvents.map((event, index) => {
             const hasImage = Boolean(event.image)
 
             return (
               <article
-                key={`${event.year}-${event.title}`}
+                key={event.id}
+                id={event.id}
                 className="rounded-[2rem] border border-slate-200 bg-white shadow-sm"
               >
                 <div className="grid gap-0 lg:grid-cols-[170px_minmax(0,1fr)]">
@@ -170,7 +107,7 @@ export default function TimelinePage() {
                     <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
                       Moment {index + 1}
                     </p>
-                    <p className="mt-3 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+                    <p className={`mt-3 break-words font-semibold tracking-tight text-slate-950 ${event.year.length > 9 ? "text-lg md:text-xl" : "text-2xl md:text-3xl"}`}>
                       {event.year}
                     </p>
                   </div>
@@ -200,6 +137,7 @@ export default function TimelinePage() {
                             {event.significance}
                           </p>
                         </div>
+                        <ChronologySources sources={event.sources} />
                       </div>
 
                       {hasImage ? (

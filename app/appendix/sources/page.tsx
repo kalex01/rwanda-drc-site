@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { chronologySources, chronologyScope, chronologyEditorialNote } from "@/app/data/chronology"
 
 const sourceGroups = [
   {
@@ -166,6 +167,30 @@ export default function SourcesPage() {
               </p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="chronology-sources" className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 md:py-10">
+        <div className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm sm:p-6 lg:p-8">
+          <h2 id="chronology-sources" className="text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+            Sources for the shared chronology
+          </h2>
+          <p className="mt-4 text-sm leading-6 text-slate-500">{chronologyScope}</p>
+          <p className="mt-4 text-base leading-7 text-slate-700">{chronologyEditorialNote}</p>
+          <p className="mt-4 text-sm leading-6 text-slate-600">
+            Each timeline entry links to the documents supporting it. Official releases
+            document decisions and public positions; they do not independently settle
+            every underlying allegation. Reproduced joint statements are labelled as such.
+          </p>
+          <ul className="mt-6 space-y-3 text-sm leading-6 text-slate-700">
+            {Object.entries(chronologySources).map(([id, source]) => (
+              <li key={id}>
+                <a href={source.href} className="rounded-sm underline underline-offset-4 hover:text-slate-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-900">
+                  {source.label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
